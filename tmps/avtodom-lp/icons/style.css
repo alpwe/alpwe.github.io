@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'autohome';
+  src:  url('fonts/autohome.eot?ssiycb');
+  src:  url('fonts/autohome.eot?ssiycb#iefix') format('embedded-opentype'),
+    url('fonts/autohome.ttf?ssiycb') format('truetype'),
+    url('fonts/autohome.woff?ssiycb') format('woff'),
+    url('fonts/autohome.svg?ssiycb#autohome') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'autohome' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ah-moto:before {
+  content: "\e90e";
+}
+.ah-wash:before {
+  content: "\e900";
+}
+.ah-ventilator:before {
+  content: "\e901";
+}
+.ah-shod:before {
+  content: "\e902";
+}
+.ah-porshen:before {
+  content: "\e903";
+}
+.ah-logo:before {
+  content: "\e904";
+}
+.ah-lodka:before {
+  content: "\e905";
+}
+.ah-instr:before {
+  content: "\e906";
+}
+.ah-generator:before {
+  content: "\e907";
+}
+.ah-finde:before {
+  content: "\e908";
+}
+.ah-evacuator:before {
+  content: "\e909";
+}
+.ah-engin:before {
+  content: "\e90a";
+}
+.ah-detail2:before {
+  content: "\e90b";
+}
+.ah-detail1:before {
+  content: "\e90c";
+}
+.ah-calc:before {
+  content: "\e90d";
+}
+

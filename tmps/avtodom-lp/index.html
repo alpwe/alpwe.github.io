@@ -1,0 +1,2793 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<title>АвтоДом</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/media.css" rel="stylesheet">
+	<link href="icons/style.css" rel="stylesheet">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="logo">
+						<span class="icon ah-logo"></span>
+					</div>
+					<div class="top-h1">
+						<h1>«АвтоДом» - обслуживание автомобилей любых марок</h1>
+					</div>
+					<p class="top-text">
+						Уже 10 лет мы делаем так, чтобы вы продолжали с удовольствием пользоваться своим автомобилем и он Вас не подводил.
+					</p>
+					<p class="phone-top">+7 (921) 595-7008</p>
+					<button type="button" class="btn btn-warning btn-lg btn-top" data-toggle="modal" data-target="#modal-recall">
+					  Хотите мы сами перезвоним?
+					</button>
+
+					<!-- modal-recall -->
+					<div class="modal fade" id="modal-recall" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+					  <div class="modal-dialog" role="document">
+					    <div class="modal-content">
+					      <div class="modal-body">
+					   			<form class="center-block recall-form" id="recall" method="post">
+										<h4 class="text-center">Просто укажите Ваш телефон</h4>
+										<p>Мастер незамедлительно свяжется с вами.</p>
+										<div class="form-group">
+											<input type="text" class="form-control" name="user_tel" pattern="[0-9\]{7,20}" placeholder="Ваш телефон" required>
+											<input type="hidden" name="recall-form">
+										</div>											
+										<button class="btn btn-primary">Отправить заявку</button>
+									</form>
+					   		</div>
+					   		<div class="modal-footer">
+									<button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Закрыть</button>
+								</div>
+					    </div>
+					  </div>
+					</div>
+					<!-- modal-recall -->
+
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section id="service">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 text-center">
+					<h2>Услуги сервиса</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 text-center">
+					<ul class="list-inline">
+						<li class="item-list">
+							<a href="#myModal1" type="button" data-toggle="modal">
+								<span class="icon ah-generator"></span>
+								<p class="item-text">Ремонт стартеров генераторов</p>
+							</a>
+						</li>
+						<li class="item-list">
+							<a href="#myModal2" type="button" data-toggle="modal">
+								<span class="icon ah-detail1"></span>
+								<p class="item-text">Ремонт агрегатных узлов</p>
+							</a>
+						</li>
+						<li class="item-list">
+							<a href="#myModal3" type="button" data-toggle="modal">
+								<span class="icon ah-finde"></span>
+								<p class="item-text">Диагностика</p>
+							</a>
+						</li>
+						<li class="item-list">
+							<a href="#myModal4" type="button" data-toggle="modal">
+								<span class="icon ah-shod"></span>
+								<p class="item-text">Развал схождение</p>
+							</a>
+						</li>
+						<li class="item-list">
+							<a href="#myModal5" type="button" data-toggle="modal">
+								<span class="icon ah-ventilator"></span>
+								<p class="item-text">Заправка кондиционера</p>
+							</a>
+						</li>
+						<li class="item-list">
+							<a href="#myModal6" type="button" data-toggle="modal">
+								<span class="icon ah-porshen"></span>
+								<p class="item-text">Ремонт дизельных двигателей</p>
+							</a>
+						</li>
+						<li class="item-list">
+							<a href="#myModal7" type="button" data-toggle="modal">
+								<span class="icon  ah-instr"></span>
+								<p class="item-text">Техническое обслуживание</p>
+							</a>
+						</li>
+						<li class="item-list">
+							<a href="#myModal8" type="button" data-toggle="modal">
+								<span class="icon ah-lodka"></span>
+								<p class="item-text">Ремонт лодочных моторов</p>
+							</a>
+						</li>
+						<li class="item-list">
+							<a href="#myModal9" type="button" data-toggle="modal">
+								<span class="icon ah-engin"></span>
+								<p class="item-text">Диагностика и ремонт бензиновых дизель генераторов</p>
+							</a>
+						</li>
+						<li class="item-list">
+							<a href="#myModal10" type="button" data-toggle="modal">
+								<span class="icon ah-detail2"></span>
+								<p class="item-text">Запчасти</p>
+							</a>
+						</li>
+						<li class="item-list">
+							<a href="#myModal11" type="button" data-toggle="modal">
+								<span class="icon ah-moto"></span>
+								<p class="item-text">Ремонт мототехники</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="advantage">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+				<h2 class="text-center">Действующие акции</h2>
+					<div id="carousel-ah" class="carousel slide" data-ride="carousel">
+					  <!-- Indicators -->
+					  <ol class="carousel-indicators">
+					    <li data-target="#carousel-ah" data-slide-to="0" class="active"></li>
+					    <li data-target="#carousel-ah" data-slide-to="1"></li>
+					    <li data-target="#carousel-ah" data-slide-to="2"></li>
+					  </ol>
+
+					  <!-- Wrapper for slides -->
+					  <div class="carousel-inner" role="listbox">
+					    <div class="item active center-block">
+							  <img class="img-responsive" src="./images/slides/slide-1.jpg" alt="...">
+							  <!-- max-height images is 350px -->
+							  <div class="carousel-caption">
+							    <!-- <h3>Замена тормозных колодок всего 400 руб.</h3>
+							    <p>При покупки оригинальных запчестей</p> -->
+							  </div>
+							</div>
+					    <div class="item">
+							  <img class="img-responsive" src="./images/slides/slide-2.jpg" alt="...">
+							  <div class="carousel-caption">
+							   <!--  <h3>Замена масла бесплатно</h3>
+							    <p>При покупке масла и фильтра</p> -->
+							  </div>
+							</div>
+					    <div class="item">
+							  <img class="img-responsive" src="./images/slides/slide-3.jpg" alt="...">
+							  <div class="carousel-caption">
+							    <h3>Скидка 15% + 15% = 30% со всей суммы</h3>
+							    <p>При покупке запчастей и ремонте!</p>
+							  </div>
+							</div>
+					  </div>
+					  <!-- /Wrapper for slides -->
+				    <!-- Controls -->
+					  <a class="left carousel-control" href="#carousel-ah" role="button" data-slide="prev">
+					    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					    <span class="sr-only">Previous</span>
+					  </a>
+					  <a class="right carousel-control" href="#carousel-ah" role="button" data-slide="next">
+					    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					    <span class="sr-only">Next</span>
+					  </a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="washing">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<h2 class="text-center">Автомойка</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-5">
+					<form class="wash-form" id="wash" method="post">
+						<h4 class="text-center">Оформите заявку и получите скидку 5%</h4>
+						<div class="form-group">
+							<input type="text" class="form-control" name="user_name" pattern="^[А-Яа-яЁё\s]+$" placeholder="Ваше имя" required>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" name="user_tel" pattern="[0-9\]{7,20}" placeholder="Ваш телефон" required>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" name="num_car" pattern="^[А-Яа-яЁё\s0-9]+$" placeholder="Номер автомобиля" required>
+							<input type="hidden" name="washing-form">
+						</div>
+						<button class="btn btn-primary btn-block">Отправить заявку</button>
+					</form>		
+				</div>
+				<div class="col-md-7">
+					<div class="wrap-washing">
+						<div class="table-responsive">
+							<table class="table table-bordered washing">
+								<tr>
+									<th></th>
+							  	<th>Легковые автомобили</th>
+								<th>Кроссоверы/<br>S класс</th>
+								<th>Микроавтобусы/<br>Внедорожники</th>
+							  </tr>
+							  <tr>
+							  	<td>Мойка люкс*</td>
+								<td>550 руб.</td>
+								<td>650 руб.</td>
+								<td>750 руб.</td>
+							  </tr>
+							  <tr>
+							  	<td>Полировка кузова (защитный слой)**</td>
+							  	<td>1500 руб.</td>
+							  	<td>1700 руб.</td>
+							  	<td>2000 руб.</td>
+							  </tr>
+							  <tr>
+							  	<td>Восстановительная полировка кузова**</td>
+							  	<td>4500 руб.</td>
+							  	<td>5500 руб.</td>
+								  <td>6500 руб.</td>
+							  </tr>
+							  <tr>
+							  	<td>Химчистка салона***</td>
+							  	<td>3000 руб.</td>
+							  	<td>4500 руб.</td>
+									<td>6000 руб.</td>
+							  </tr>
+							</table>
+						</div>
+						<p>* мойка кузова, мойка ковриков, уборка салона от пыли, протирка стекол внутри автомобиля, не включает уборку багажного отделения</p>
+						<p>** включая крышу.</p>
+						<p>*** включая химчистку багажного отделения</p>
+					</div>
+				</div>				
+			</div>
+		</div>
+	</section>
+
+	<section class="for-wash">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 text-center">
+					<p>+7 (921) 777 01 02</p>
+					<p>Работаем с 9 до 20 часов</p>
+					<p>Ежедневно</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+		<section id="evacuation">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-offset-6 col-sm-6">
+					<div class="text-right">
+						<h2>Услуги эвакуатора</h2>
+						<p>В черте города Лодейное Поле <br><span class="price-evacuator">1000 руб.</span></p>
+						<p>* В стоимость включено (подача + 1час)</p>
+					</div>
+					<form class="evacuator-form" id="evacuator" method="post">
+					  <div class="form-group">
+					    <input type="text" class="form-control" name="user_tel" pattern="[0-9\]{7,20}" placeholder="Введите ваш телефон" required>
+					    <input type="hidden" name="evacuator-form">
+					  </div>
+					  <button class="btn btn-primary btn-block">Вызвать эвакуатор</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section id="map">
+		<div class="container-fluid">
+			<div class="row" id="wait">
+				<div class="col-lg-offset-2 col-lg-3 col-md-4 col-sm-6 text-center">
+					<div class="contacts">
+						<h2>Ждем Вас</h2>
+						<p><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Адрес: Областная обл., г. Город, ул.Уличная, 1 А</p>
+						<p><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span> СТО: +7 (123) 456-7890</p>
+						<p><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span> Aвтомойка: +7 (123) 456-7890</p>
+						<p><span class="glyphicon glyphicon-globe" aria-hidden="true"></span> Координаты для GPS: N11.11111° E22.2222°</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=IJ5dAnerhvlteGVc-O6rlpeqpp3MPFGe&amp;width=100%&amp;height=600&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=false"></script>
+			</div>
+		</div>
+	</section>
+
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3 text-center">
+					<div class="logo">
+						<span class="icon ah-logo"></span>
+					</div>
+					<div class="copyright">
+						<p>
+							<span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span> 2016 АвтоДом
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-3 col-xs-6">
+					<ul class="list-unstyled">
+						<li>
+							<a href="#myModal1" type="button" data-toggle="modal">
+								<p class="item-text">Ремонт стартеров генераторов</p>
+							</a>
+						</li>
+						<li>
+							<a href="#myModal2" type="button" data-toggle="modal">
+								<p class="item-text">Ремонт агрегатных узлов</p>
+							</a>
+						</li>
+						<li>
+							<a href="#myModal3" type="button" data-toggle="modal">
+								<p class="item-text">Диагностика</p>
+							</a>
+						</li>
+						<li>
+							<a href="#myModal4" type="button" data-toggle="modal">
+								<p class="item-text">Развал схождение</p>
+							</a>
+						</li>
+						<li>
+							<a href="#myModal5" type="button" data-toggle="modal">
+								<p class="item-text">Заправка кондиционера</p>
+							</a>
+						</li>
+						<li>
+							<a href="#myModal6" type="button" data-toggle="modal">
+								<p class="item-text">Ремонт дизельных двигателей</p>
+							</a>
+						</li>
+					</ul>					
+				</div>
+				<div class="col-sm-3 col-xs-6">
+					<ul class="list-unstyled">
+						<li>
+							<a href="#myModal7" type="button" data-toggle="modal">
+								<p class="item-text">Техническое обслуживание</p>
+							</a>
+						</li>
+						<li>
+							<a href="#myModal8" type="button" data-toggle="modal">
+								<p class="item-text">Ремонт лодочных моторов</p>
+							</a>
+						</li>
+						<li>
+							<a href="#myModal9" type="button" data-toggle="modal">
+								<p class="item-text">Диагностика и ремонт бензиновых дизель генераторов</p>
+							</a>
+						</li>
+						<li>
+							<a href="#myModal10" type="button" data-toggle="modal">
+								<p class="item-text">Запчасти</p>
+							</a>
+						</li>
+						<li>
+							<a href="#myModal11" type="button" data-toggle="modal">
+								<p class="item-text">Ремонт мототехники</p>
+							</a>
+						</li>
+						<li>
+							<a href="#" type="button" data-toggle="modal">
+								<p class="item-text">Страхование</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm-3">
+					<div class="footer_contacts">
+						<p>СТО: +7 (123) 456-7890</p>
+						<p>Aвтомойка: +7 (123) 456-7890</p>
+						<p>E-mail: email@yandex.ru</p>
+						<p>Сайт: <a href="/">avtodom-lp.ru</a></p>
+					</div>
+					<div class="social">
+						<p>Мы в соц.сетях
+						<a href="/"><img src="https://vk.com/images/share_32.png" width="32" height="32" /></a>
+					</div>
+					<div class="cards">
+						<img src="img/mastercard.jpg" alt="">
+						<img src="img/visa.jpg" alt="">
+					</div>					
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+<!-- modals -->
+
+	<div class="modal fade bs-example-modal-lg" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+	  <div class="modal-dialog modal-lg" role="document">
+	    <div class="modal-content">
+	    	<div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel"><span class="icon ah-generator"></span>Ремонт стартеров генераторов</h4>
+	      </div>
+	      <div class="modal-body">
+	   				<p><strong>Съем и установка стартера/генератора&nbsp;</strong><strong>в некоторых А/М для снятия агрегата необходим демонтаж дополнительных деталей мотора или передней подвески (цена согласовывается)&nbsp;</strong></p>
+
+		<p class="rtecenter"><strong>Городской Центр - по ремонту Стартеров и Генераторов&nbsp;</strong></p>
+
+		<p class="rtecenter"><strong>продажа, обслуживание и ремонт стартеров и ремонт генераторов в </strong><strong>Лодейном Поле</strong></p>
+
+		<p><strong><img alt="" src="/img/10.jpg" style="height:150px; width:272px"></strong></p>
+
+		<p>Ремонт генераторов и стартеров - это основной профиль работы нашей компании. Если у вас щелкает, не заводится, прокручивает стартер или генератор, то это повод обратиться в мастерскую. Наши мастера оперативно выполнят диагностику вашего агрегата и произведут необходимые ремонтные работы. В крайнем случае, мы выполним замену генератора или стартера. Современное диагностическое оборудование и опыт мастеров, позволяют быстро обнаружить неисправности. Снятие, проверка, установка и подключение производятся опытными мастерами.</p>
+
+		<p><img alt="" src="img/11.jpg" style="height:149px; width:246px"></p>
+
+		<p>Поломки стартеров случаются и у старых и у новых автомобилей. Разница в том, что у новых автомобилей такие проблемы обнаруживаются внезапно (это связано с использованием при сборке некачественных комплектующих), а у автомобилей со значительным пробегом — постепенно. Если вы недавно купили автомобиль, стартер или генератор которого внезапно отказал, то ваш авто-дилер обязан произвести ремонт бесплатно или же заменить автомобиль, если же автомобиль был приобретен с большим пробегом с рук, то придется проверить причину и ремонтировать авто за собственные средства.</p>
+
+		<p>Распространёнными причинами неправильной работы стартера являются проскальзывание бендикса (обгонной муфты), отказ втягивающего реле (как правило из-за пригорания контактов или перегрева внутренней обмотки), сильный износ втулок, щеток, перегрев якоря и статорной обмотки, вследствие чего они теряют свои изоляционные свойства и стартер теряет свою мощность, и стартер щелкает, но не крутит и т. д.</p>
+
+		<p><img alt="" src="img/112.jpg" style="height:150px; width:225px"></p>
+
+		<p>В генераторах часто из строя выходят такие детали как: подшипники или обгонная муфта генератора (генератор издает характерный шум), изнашиваются щетки и коллекторные кольца, выходит из строя реле-регулятор (напряжение становится нестабильным или зарядки вообще нет), часто в генераторах выходит из строя диодный мост (выпрямитель) бывает что из-за старости, но чаще из-за чрезмерной нагрузки на генератор из-за плохого аккумулятора или замыкания в проводке автомобиля.</p>
+
+		<ul>
+			<li>бесплатная диагностика и консультации (дианостика включает в себя разборку агрегата и полную проверку комплектующих на приборах)</li>
+			<li>ремонт стартеров и генераторов автомобилей любых марок: от Форд, Сузуки, Рено, Хонда, Опель и прочее</li>
+			<li>замена бендикса в стартере</li>
+			<li>замена втягивающего реле в стартере</li>
+			<li>замена подшипников в генераторе</li>
+			<li>замена диодного моста</li>
+			<li>замена щеток</li>
+			<li>замена реле регулятора</li>
+			<li>замена статора</li>
+			<li>замена щеточного узла</li>
+			<li>замена втулок</li>
+			<li>замена якоря стартера</li>
+			<li>замена коллектора</li>
+			<li>замена ротора</li>
+			<li>замена редуктора стартера , ремонт редуктора стартера</li>
+			<li>ремонт щеточного узла</li>
+			<li>ремонт обмотки , ремонт ротора</li>
+			<li>ремонт реле регулятора</li>
+			<li>ремонт диодного моста</li>
+			<li>ремонт втягивающего реле</li>
+			<li>ремонт бендикса</li>
+		</ul>
+
+		<p><img alt="" src="img/13.jpg" style="height:150px; width:273px"></p>
+
+		<p>СТОИМОСТЬ РАБОТЫ С АГРЕГАТОМ (стартер/генератор)</p>
+
+		<p><strong>Диагностика и разборка генератора или стартера, определение неисправностей, оценка необходимого&nbsp;ремонта производится БЕСПЛАТНО!!! (при согласии на ремонт агрегата или покупку нового/ восстановленного агрегата)</strong></p>
+
+		<p>В случае отказа от ремонта, обмена&nbsp;или покупки агрегата в нашей мастерсой - диагностика оплачивается клиентом . Агрегат отдается в разобранном виде.&nbsp;<br>
+		По желанию клиента производится сборка стартера или генератора в исходное состояние (если это возможно) и оплачивается&nbsp;отдельно в сумме</p>
+
+		<p>При ремонте агрегатов используются детали производителей: BOSCH, VALEO, NIPPON-DENSO, NIKKO, LUCAS, DELCO-REMY, MARELLI, CARGO, GHIBAUDI, TRANSPO, ORMI, INA, IKA, NSK, SKF, FAG, HUECO, ERA, UNIPOINT, MOBILETRON, ZEN, ZM, ZNP, MOTORCRAFT, UTM, WAI.</p>
+
+		<p><img alt="" src="img/14.jpg" style="height:150px; width:246px"></p>
+
+		<p>В нашей мастерской оперативно выполнят полную диагностику генератора или стартера, выявят все неисправности, поломки и износы деталей. После согласования с клиентом агрегат ремонтируется или производится его замена. Если после диагностики окажется, что ремонт нецелесообразен в связи с необходимостью менять большое количество деталей или цена ремонта приближается к цене нового или восстановленного агрегата или какие-то детали долго ждать под заказ - в этом случае мастер наверняка порекомендует заменить агрегат восстановленным или новым, во избежание напрасного простоя автомобиля.</p>
+
+		<p>Гарантия на заменённые детали после ремонта –&nbsp;<strong>6 месяцев</strong>.</p>
+
+		<p>&nbsp;</p>
+
+		<p><strong>ЦЕНЫ НА РЕМОНТ И УСТАНОВКУ ГЕНЕРАТОРА</strong></p>
+
+		<table cellspacing="0" cellpadding="0" border="0">
+			<tbody>
+				<tr>
+					<td rowspan="2">
+					<p>Вид работ</p>
+					</td>
+					<td colspan="3">
+					<p>Стоимость ремонта, руб.</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<p>Легковые А/М</p>
+					</td>
+					<td>
+					<p>Джипы и микроавтобусы</p>
+					</td>
+					<td>
+					<p>Грузовые А/М и спец. Техника</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<p>Диагностика на стенде, дефектовка с последующим ремонтом в нашем сервисе</p>
+					</td>
+					<td>
+					<p>Бесплатно</p>
+					</td>
+					<td>
+					<p>Бесплатно</p>
+					</td>
+					<td>
+					<p>Бесплатно</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<p>Разборка, диагностика на стенде, дефектовка, оценка необходимого ремонта, сборка</p>
+					</td>
+					<td>
+					<p>От-800 руб.</p>
+					</td>
+					<td>
+					<p>От-800 руб.</p>
+					</td>
+					<td>
+					<p>От-800 руб.</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<p>Диагностика агрегата на автомобиле, проверка электрических цепей системы питания и заряда АКБ</p>
+					</td>
+					<td>
+					<p>50-300 руб.</p>
+					</td>
+					<td>
+					<p>50-300 руб.</p>
+					</td>
+					<td>
+					<p>100-300 руб.</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<p>Проверка АКБ нагрузочной вилкой</p>
+					</td>
+					<td>
+					<p>50 руб.</p>
+					</td>
+					<td>
+					<p>50 руб.</p>
+					</td>
+					<td>
+					<p>100 руб.</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<p>Комплексный ремонт агрегата(разборка, чистка, смазка)</p>
+					</td>
+					<td>
+					<p>300 руб.</p>
+					</td>
+					<td>
+					<p>300 руб.</p>
+					</td>
+					<td>
+					<p>300 руб.</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<p>Внешняя чистка агрегата (при необходимости)</p>
+					</td>
+					<td>
+					<p>от 50 руб.</p>
+					</td>
+					<td>
+					<p>от 50 руб.</p>
+					</td>
+					<td>
+					<p>от 50 руб.</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<p>Ремонт щеточного узла</p>
+					</td>
+					<td>
+					<p>250 руб.</p>
+					</td>
+					<td>
+					<p>250 руб.</p>
+					</td>
+					<td>
+					<p>250 руб.</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<p>Восстановление обмотки ротора</p>
+					</td>
+					<td>
+					<p>от 200 руб.</p>
+					</td>
+					<td>
+					<p>от 200 руб.</p>
+					</td>
+					<td>
+					<p>от 200 руб.</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<p>Шлифовка колец ротора</p>
+					</td>
+					<td>
+					<p>100 руб.</p>
+					</td>
+					<td>
+					<p>100 руб.</p>
+					</td>
+					<td>
+					<p>100 руб.</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<p>Замена втулок</p>
+					</td>
+					<td>
+					<p>150 руб.</p>
+					</td>
+					<td>
+					<p>150 руб.</p>
+					</td>
+					<td>
+					<p>200 руб.</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<p>Замена щеток реле-регулятора</p>
+					</td>
+					<td>
+					<p>150 руб.</p>
+					</td>
+					<td>
+					<p>150 руб.</p>
+					</td>
+					<td>
+					<p>150 руб.</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<p>Замена ремня генератора</p>
+					</td>
+					<td>
+					<p>от 200 руб.</p>
+					</td>
+					<td>
+					<p>от 200 руб.</p>
+					</td>
+					<td>
+					<p>от 300 руб.</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<p>Ремонт реле-регулятора</p>
+					</td>
+					<td>
+					<p>150 руб.</p>
+					</td>
+					<td>
+					<p>150 руб.</p>
+					</td>
+					<td>
+					<p>150 руб.</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<p>Ремонт диодного моста</p>
+					</td>
+					<td>
+					<p>250 руб.</p>
+					</td>
+					<td>
+					<p>250 руб.</p>
+					</td>
+					<td>
+					<p>300 руб.</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<p>Замена токосъемных колец</p>
+					</td>
+					<td>
+					<p>350 руб.</p>
+					</td>
+					<td>
+					<p>350 руб.</p>
+					</td>
+					<td>
+					<p>400 руб.</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<p>Съём и установка генератора*</p>
+					</td>
+					<td>
+					<p>800-1500 руб.</p>
+					</td>
+					<td>
+					<p>800-1500 руб.</p>
+					</td>
+					<td>
+					<p>800-1800 руб.</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<p>Дополнительные слесарные работы ( при необходимости)</p>
+					</td>
+					<td>
+					<p>от 100 руб.</p>
+					</td>
+					<td>
+					<p>от 100 руб.</p>
+					</td>
+					<td>
+					<p>от 100 руб.</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<p>Ремонт электрики автомобилей любой сложности</p>
+					</td>
+					<td>
+					<p>1 н/ч - 1600</p>
+					</td>
+					<td>
+					<p>1 н/ч - 1800</p>
+					</td>
+					<td>
+					<p>1 н/ч - 1900</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<p>Предоставление дивана, телевизора, Wi-Fi при ожидании ремонта генератора</p>
+					</td>
+					<td>
+					<p>Бесплатно</p>
+					</td>
+					<td>
+					<p>Бесплатно</p>
+					</td>
+					<td>
+					<p>Бесплатно</p>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="4">
+					<p><strong>*</strong>&nbsp;- в некоторых А/М для снятия агрегата необходим демонтаж дополнительных деталей мотора или передней подвески, а иногда требуется вывешивание двигателя. Для данной категории автомобилей стоимость снятия-установки стартера может быть увеличена по согласованию с клиентом.</p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<p><strong><em>В стоимость не входит покупка нового или&nbsp;восстановленного&nbsp;агрегата, или запчастей к нему.&nbsp;<br>
+		Узнать о наличии агрегатов или необходимых запчастей на складе можно по телефону у наших менеджеров.</em></strong></p>
+
+		<p><strong>ЦЕНЫ НА РЕМОНТ И УСТАНОВКУ СТАРТЕРА</strong></p>
+
+		<table cellspacing="0" cellpadding="0" border="0">
+			<tbody>
+				<tr>
+					<td rowspan="2">
+					<p>Вид работ</p>
+					</td>
+					<td colspan="3">
+					<p>Стоимость ремонта, руб.</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<p>Легковые А/М</p>
+					</td>
+					<td>
+					<p>Джипы и микроавтобусы</p>
+					</td>
+					<td>
+					<p>Грузовые А/М и спец. Техника</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<p>Диагностика на стенде, дефектовка с последующим ремонтом в нашем сервисе</p>
+					</td>
+					<td>
+					<p>Бесплатно</p>
+					</td>
+					<td>
+					<p>Бесплатно</p>
+					</td>
+					<td>
+					<p>Бесплатно</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<p>Разборка, диагностика на стенде, дефектовка, оценка необходимого ремонта, сборка</p>
+					</td>
+					<td>
+					<p>От-800 руб.</p>
+					</td>
+					<td>
+					<p>От-800 руб.</p>
+					</td>
+					<td>
+					<p>От-800 руб.</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<p>Диагностика агрегата на автомобиле, проверка электрических цепей системы запуска двигателя</p>
+					</td>
+					<td>
+					<p>50-300 руб.</p>
+					</td>
+					<td>
+					<p>50-300 руб.</p>
+					</td>
+					<td>
+					<p>100-300 руб.</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<p>Комплексный ремонт агрегата</p>
+					</td>
+					<td>
+					<p>300 руб.</p>
+					</td>
+					<td>
+					<p>300 руб.</p>
+					</td>
+					<td>
+					<p>300 руб.</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<p>Внешняя чистка агрегата (при необходимости)</p>
+					</td>
+					<td>
+					<p>от 50 руб.</p>
+					</td>
+					<td>
+					<p>от 50 руб.</p>
+					</td>
+					<td>
+					<p>от 50 руб.</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<p>Ремонт щеточного узла</p>
+					</td>
+					<td>
+					<p>250 руб.</p>
+					</td>
+					<td>
+					<p>250 руб.</p>
+					</td>
+					<td>
+					<p>250 руб.</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<p>Ремонт бендикса</p>
+					</td>
+					<td>
+					<p>от 200 руб.</p>
+					</td>
+					<td>
+					<p>от 200 руб.</p>
+					</td>
+					<td>
+					<p>от 200 руб.</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<p>Ремонт втягивающего реле ( если позволяет конструкция)</p>
+					</td>
+					<td>
+					<p>от 200 руб.</p>
+					</td>
+					<td>
+					<p>от 200 руб.</p>
+					</td>
+					<td>
+					<p>от 300 руб.</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<p>Восстановление обмотки якоря</p>
+					</td>
+					<td>
+					<p>350 руб.</p>
+					</td>
+					<td>
+					<p>350 руб.</p>
+					</td>
+					<td>
+					<p>400 руб.</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<p>Восстановление обмотки статора</p>
+					</td>
+					<td>
+					<p>от 400 руб.</p>
+					</td>
+					<td>
+					<p>от 400 руб.</p>
+					</td>
+					<td>
+					<p>от 400 руб.</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<p>Шлифовка, проточка коллектора якоря статора</p>
+					</td>
+					<td>
+					<p>100 руб.</p>
+					</td>
+					<td>
+					<p>100 руб.</p>
+					</td>
+					<td>
+					<p>100 руб.</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<p>Замена втулок, подшипников</p>
+					</td>
+					<td>
+					<p>150 руб.</p>
+					</td>
+					<td>
+					<p>150 руб.</p>
+					</td>
+					<td>
+					<p>200 руб.</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<p>Замена щеток методом контактной сварки</p>
+					</td>
+					<td>
+					<p>250 руб.</p>
+					</td>
+					<td>
+					<p>250 руб.</p>
+					</td>
+					<td>
+					<p>250 руб.</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<p>Съём и установка стартера*</p>
+					</td>
+					<td>
+					<p>800-1500 руб.</p>
+					</td>
+					<td>
+					<p>800-1500 руб.</p>
+					</td>
+					<td>
+					<p>800-1800 руб.</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<p>Дополнительные слесарные работы ( при необходимости)</p>
+					</td>
+					<td>
+					<p>от 100 руб.</p>
+					</td>
+					<td>
+					<p>от 100 руб.</p>
+					</td>
+					<td>
+					<p>от 100 руб.</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<p>Ремонт электрики автомобилей любой сложности</p>
+					</td>
+					<td>
+					<p>1 н/ч - 800 руб.</p>
+					</td>
+					<td>
+					<p>1 н/ч - 800 руб.</p>
+					</td>
+					<td>
+					<p>1 н/ч - 900 руб.</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<p>Доставка агрегата в пределах КАД</p>
+					</td>
+					<td>
+					<p>350 руб.</p>
+					</td>
+					<td>
+					<p>350 руб.</p>
+					</td>
+					<td>
+					<p>450 руб.</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<p>Предоставление дивана, телевизора, Wi-Fi при ожидании ремонта стартера</p>
+					</td>
+					<td>
+					<p>Бесплатно</p>
+					</td>
+					<td>
+					<p>Бесплатно</p>
+					</td>
+					<td>
+					<p>Бесплатно</p>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="4">
+					<p><strong>*</strong>&nbsp;- в некоторых А/М для снятия агрегата необходим демонтаж дополнительных деталей мотора или передней подвески, а иногда требуется вывешивание двигателя. Для данной категории автомобилей стоимость снятия-установки стартера может быть увеличена по согласованию с клиентом.</p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<p><strong><em>В стоимость не входит покупка нового или&nbsp;восстановленного&nbsp;агрегата, или запчастей к нему.&nbsp;<br>
+		Узнать о наличии агрегатов или необходимых запчастей на складе можно по телефону у наших менеджеров.</em></strong></p>	   		</div>
+	   		<div class="modal-footer">
+        		<button type="button" class="btn btn-primary" data-dismiss="modal">Закрыть</button>
+      		</div>
+	    </div>
+	  </div>
+	</div>
+	<div class="modal fade bs-example-modal-lg" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+	  <div class="modal-dialog modal-lg" role="document">
+	    <div class="modal-content">
+	    	<div class="modal-header">
+	        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        	<h4 class="modal-title" id="myModalLabel">Ремонт агрегатных узлов</h4>
+	      	</div>
+	     	<div class="modal-body">
+	   			<p><strong>ЕСЛИ ВАШЕМУ АВТОМОБИЛЮ НЕОБХОДИМ АГРЕГАТНЫЙ РЕМОНТ.</strong></p>
+<p>
+	<img src="images/unit4.jpg" alt="" class="img-responsive" style="float: left; margin: 5%;">
+	После проведения тщательной компьютерной диагностике вашего автомобиля на специальном оборудовании может выявиться, что машине требуется агрегатный ремонт. Процесс этот достаточно трудоёмкий и требует особой квалификации мастеров. Ремонт автомобиля может понадобиться и после ДТП. Качественную замену всех неисправных частей авто можно осуществить только после полного выявления всех неисправностей.	
+</p>
+<p style="clear: both;"><strong>РЕМОНТ УЗЛОВ И РАЗЛИЧНЫХ СИСТЕМ АВТОМОБИЛЯ.</strong></p>
+<p>
+	<img src="images/unit7.jpg" alt="" class="img-responsive" width="50%" style="float: right; margin: 5%;">
+	В зависимости от тех неисправностей, которые обнаружил мастер на станции технического обслуживания, может понадобиться замена различных узлов и систем. В автосервисе предлагают услуги по замене и ремонте разнообразных деталей. Проводится качественный ремонт тормозной системы, подвески, системы выхлопа и устранение неисправностей в электрике. В случае неисправности подвески важно сразу же обращаться на СТО для замены вышедших из строя элементов ходовой части. Только тогда вам гарантирована безопасность на дороге и дальнейшая длительная эксплуатация автомобиля. Если в результате диагностики будут выявлены различные повреждения пневмоподвески авто, задней подвески, передней подвески, то квалифицированный мастер устранит все неисправности. Для ремонта различных узлов в автосервисе используется оборудование европейского качества, которое позволяет быстро и качественно определить какая именно деталь или система автомобиля нуждается в ремонте.
+	
+	<img src="images/unit9.jpg" alt="" class="img-responsive" width="85%" style="margin: 5%;">
+</p>
+<p style="clear: both;"></p>
+<p><strong>АГРЕГАТНЫЙ РЕМОНТ АВТОМОБИЛЯ.</strong></p>
+<p>
+	<img src="images/unit2.jpg" alt="" class="img-responsive" width="50%" style="float: right; margin: 5%;">
+	
+	Если диагностика автомобиля выявит неполадки в системе двигателя внутреннего сгорания, то может потребоваться полный капитальный ремонт мотора. Он включает в себя разборку двигателя, ремонт цилиндров либо других деталей двигателя, последующую сборку, холодную обкатку и регулировку двигателя. Капитальный ремонт двигателя достаточно трудоёмкая работа, однако в автосервисе вам выполнят ремонт вашего автомобиля в самые короткие сроки. 
+</p>
+<p>
+	<img src="images/unit6.jpg" alt="" class="img-responsive" width="50%" style="float:left; margin: 5%;">
+	Особого подхода требует и ремонт механической и автоматической коробок передач. 
+	Трансмиссия автомобиля – сложное устройство, и только квалифицированный специалист сможет справиться с её ремонтом. Механические коробки передач считаются более долговечными, однако и они иногда требуют капитального ремонта. 
+	В автосервисе специалист разберёт коробку передач, устранит выявленные неисправности и поставит новые детали взамен вышедших из строя. Также автосервис оказывает услуги и по другим видам агрегатного ремонта автомобиля. Если вашему авто требуется замена рулевых реек, ремонт гидроусилителя руля, ремонт стартера или генератора, то все неполадки будут устранены мастером в кратчайший срок. После замены деталей все агрегаты проходят тщательную проверку на специальном оборудовании. Отремонтированные генераторы – на специальном стенде при максимальной нагрузке. Ремонт тормозной системы требует замены тормозных колодок, которые необходимо подбирать достаточно правильно с учётом быстроты движения автомобиля и стиля вождения. Эффективность тормозов зависит от отлаженной работы всей тормозной системы. Передние и задние колодки владелец автомобиля может выбрать с учётом всех потребностей авто в автосервисе и со склада. Своевременный ремонт автомобиля обезопасит ваше движение на дорогах и поможет избежать ДТП. Проводя регулярную диагностику, устраняйте все выявленные неисправности, не рискуйте своим здоровьем и жизнями пассажиров. Только пригодный к эксплуатации автомобиль позволит вам чувствовать себя уверенно и комфортно при езде.
+	<img src="images/unit5.jpg" alt="" class="img-responsive" width="85%" style="margin: 5%;">
+	
+</p>	   		</div>
+	   		<div class="modal-footer">
+      		<button type="button" class="btn btn-primary" data-dismiss="modal">Закрыть</button>
+    		</div>
+	    </div>
+	  </div>
+	</div>
+	<div class="modal fade bs-example-modal-lg" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+	  <div class="modal-dialog modal-lg" role="document">
+	    <div class="modal-content">
+	    	<div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Диагностика</h4>
+	      </div>
+	      <div class="modal-body">
+	   			<h2>ДИАГНОСТИКА АВТОМОБИЛЯ – <small>ВАША БЕЗОПАСНОСТЬ НА ДОРОГЕ</small></h2>
+
+<p>Только своевременно отремонтированный автомобиль способен обеспечить вам полную безопасность в поездке. Чтобы выявить абсолютно все неполадки в различных системах и агрегатах, необходима тщательная диагностика автомобиля на станции техобслуживания. Сегодня мастера проводят диагностику и последующий ремонт самых разнообразных марок – от отечественных моделей автомобилей до зарубежных. Получить полное представление о техническом состоянии авто позволяет качественное современное оборудование на станции техобслуживании. Стоимость диагностики зависит от её вида, полная компьютерная диагностика автомобиля на различных стендах обойдётся владельцу несколько дороже, чем отдельный осмотр какой-либо системы. Диагностика автомобиля цена которой указана в прейскуранте станции техобслуживания, зависит от вида и типа технического осмотра.</p>
+
+<p><strong>ПОЛНАЯ ДИАГНОСТИКА АВТОМОБИЛЯ</strong></p>
+
+<p>Диагностика автомобиля АвтоДому позволяет выявить все неисправности в различных системах и агрегатах. Своевременный осмотр позволит лучше контролировать автомобиль в поездках. Вы сможете чувствовать себя более уверенно за рулём, а также не беспокоиться о внезапном выходе из строя какой-либо системы.</p>
+
+<p>Полная диагностика автомобиля включает:</p>
+<ul>
+	<li>первоначальный визуальный осмотр различных механизмов</li>
+	<li>проверка на стендах развал-схождения колёс</li>
+	<li>проверка на стенде работы двигателя</li>
+	<li>проверка на стенде работы двигателя</li>
+	<li>тщательный осмотр ходовой части</li>
+	<li>проверка тормозной системы и эффективности торможения каждого колеса</li>
+	<li>проверка электротехнической системы</li>
+	<li>осмотр различных крепежей и правильность установки деталей</li>
+	<li>проверка работы топливной системы</li>
+</ul>
+
+<p>Каждый владелец автомобиля, обратившийся к квалифицированным специалистам на станции техобслуживания, может быть уверен в высоком качестве проведённого осмотра своего автомобиля. Сделать диагностику автомобиля – означает продлить срок эксплуатации машины и обеспечить себя и пассажиров безопасностью на дороге.</p>
+
+<p><strong>КАК ПРОЙТИ ВЕСЬ КОМПЛЕКСНЫЙ ОСМОТР АВТОМОБИЛЯ? </strong></p>
+
+<p>На первоначальном этапе мастер визуально осмотрит все крепления деталей агрегата, проверит работу различных систем автомобиля, состояние кузова и электроприборов. Однако визуально определить все неисправности в автомобиле невозможно. Для тщательной проверки необходимо качественное современное оборудование и только специалист знает, как сделать диагностику автомобиля более тщательной.</p>
+
+<p>На СТО существует специальное оборудование для полной диагностики технического состояния автомобиля:</p>
+<ul>
+	<li>стенд для проверки двигателя</li>
+	<li>стенд для оценки различных систем</li>
+	<li>стенд для проверки развал-схождения колёс</li>
+	<li>стенд для оценки механизмов ходовой части</li>
+</ul>
+
+<p>Если специалисты СТО обнаружат неполадки и сбои в действии какой-либо системе или агрегате, то понадобится последующий ремонт диагностика автомобиля после устранения всех неисправностей. Полное комплексное обследование вашего автомобиля – гарантия его дальнейшей отличной эксплуатации без возникновения неожиданных проблем в поездке. Обратившись в центр диагностики автомобилей, вы избавитесь от различных сбоев в движении автомобиля, посторонних шумов в работе двигателя. Ваш автомобиль будет заводиться в любую погоду, а вы сможете прекрасно контролировать его на дороге. В центре работают специалисты только высокой квалификации, способные качественно осуществить диагностику автомобилей всех марок на современном компьютерном оборудовании. Помните, что диагностику систем и агрегатов следует проводить своевременно. Расценки на некоторые виды работ:</p>
+
+<div class="table-responsive">
+	<table class="table table-bordered">
+		<tr>
+			<th>Наименование работ</th>
+			<th>Цена</th>
+		</tr>
+		<tr>
+			<td>Компьютерная диагностика</td>
+			<td>1250-2500 рублей</td>
+		</tr>
+		<tr>
+			<td>Контрольный осмотр подвески</td>
+			<td>600 рублей</td>
+		</tr>
+		<tr>
+			<td>Проверка развал-схождения (стоимость за одну ось)</td>
+			<td>600 рублей</td>
+		</tr>
+	</table>
+</div>
+
+<p>Компьютерная диагностика включает в себя: выявление ошибок на электронных блоках автомобиля, считывание ошибок на блоках доступа, блоках ABS, ESP, EBD, SRS, подушке безопасности (airbag), автоматической и роботизированной коробке передач,систем управления подвески, блоках регулировки фар, блоков комфорта (кондиционер, климат-контроль, печка). Диагностика подвески подразумевает: проверку люфтов, наличия видимых механических повреждений, износа резинок, пыльников и уплотнителей, подтеков амортизаторов, деформации витков пружин, контроль работоспособности рычагов, сайлентблоков и шаровых опор.&nbsp;Проверка развал схождения - измерение и регулировка углов установки колес.</p>
+
+<p><strong>Записаться на диагностику автомобиля можно по телефону</strong>&nbsp;<strong>+7 (921) 595 70 08</strong></p>
+<img alt="" src="img/56.jpg" style="height:340px; width:392px">
+<img alt="" src="img/67.jpg" style="height:205px; width:300px">
+<img alt="" src="img/5676.jpg" style="height:440px; width:330px">	   		</div>
+	   		<div class="modal-footer">
+        		<button type="button" class="btn btn-primary" data-dismiss="modal">Закрыть</button>
+      		</div>
+	    </div>
+	  </div>
+	</div>
+	<div class="modal fade bs-example-modal-lg" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+	  <div class="modal-dialog modal-lg" role="document">
+	    <div class="modal-content">
+	    	<div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Развал-схождение</h4>
+	      </div>
+	      <div class="modal-body">
+	   			<p><strong>РАЗВАЛ СХОЖДЕНИЕ</strong></p>
+
+<p>Любой автомобиль нуждается в обязательном верном выставлении углов колёс, который называют развалом-схождением. Подобная регулировка и настройка подвески автомобиля позволяет правильно установить углы осей колёс. Данная процедура необходима для особой устойчивости автомобиля на дороге, о чём знает каждый водитель. При постановке колёс параллельно руль станет поворачиваться намного сложнее, а сам автомобиль будет менее управляемый. Развал и схождение – два различных понятия, обобщённые вместе.</p>
+
+<p><img alt="" src="img/image.png" style="height:375px; width:500px"></p>
+
+<p><img alt="" src="img/image%20(1).png" style="height:236px; width:500px">&nbsp;<img alt="" src="img/image%20(2).png" style="height:125px; width:500px"></p>
+
+<p><strong>РАЗВАЛ СХОЖДЕНИЕ КОЛЕС</strong></p>
+
+<p>Угол между плоскостью вращения шины и вертикалью специалисты называют развалом. Когда колёса наклонены внутрь, развал является отрицательным. И, наоборот, если сторона колеса смотрят наружу – развал положительный. Если автомобиль уводит значительно в сторону на дороге, то он срочно нуждается в процедуре правильной регулировки колёс. Развал позволяет обеспечить полный контакт протектора автомобильной резины с асфальтом дороги. Именно он обеспечивает устойчивость машины на повороте. Отрицательный развал – признак износа и неправильной регулировки подвески автомобиля. Если подвеска имеет свои особенности, как у гоночных автомобилей, то выставляется отрицательный развал, поскольку подобный автомобиль предназначен для езды по овальной дороге, и его колёса должны быть направлены внутрь. Двухрычажные подвески регулируются также со своими особенностями. Сегодня для установления развала используется компьютерное оборудование с оптическими датчиками.</p>
+
+<p><strong>РАЗВАЛ СХОЖДЕНИЕ АВТОМОБИЛЯ И ВЫСТАВЛЕНИЕ КОЛЕС</strong></p>
+
+<p>Угол между плоскостью вращения шины и направлением самого движения называют схождением. . На многих автомобилях схождение регулируют на передних и задних колёсах. Неверно отрегулированное схождение является причиной быстрого износа покрышки. Если на поворотах слышен визг автомобильных шин – это первый признак неверно установленного угла схождения колёс. При проведении процедуры схождения на стенде мастер определяет ещё некоторые необходимые параметры колеса и оси автомобиля.</p>
+
+<p><strong>ГДЕ СДЕЛАТЬ РАЗВАЛ СХОЖДЕНИЕ?</strong></p>
+
+<p>Верная установка развала-схождения делает автомобиль удобным в управлении на дороге. Точная реакция движения руля обеспечивает безопасность при движении машины. Также отрегулированный развал-схождение экономит средства водителя, поскольку уменьшает расход топлива, износ автомобильной резины и продлевает долговечность подвески. При неправильной установке развал-схождения уже через месяц новый протектор шины придёт в негодность. Именно поэтому важно регулярное техническое обслуживание колёс вашего автомобиля. Проверка углов колёс в обязательном порядке необходима после ремонта ходовой части – замены рулевых тяг, маятникового рычага, шаровых опор, рулевого редуктора, рычагов подвески и замены сайленблоков. Основными причинами пройти процедуру развал-схождения являются запоздалые и тугие движения руля, пробой подвески, жёсткий наезд на любое препятствие на дороге, неустойчивость автомобиля на дороге. Также следует обратить внимание, когда колёса задеваются за подкрылки при повёрнутом до упора руле. Для выставления правильного развал-схождения в мастерской используется специальный стенд на основе технологии системы машинного зрения. Подобное высококачественное оборудование содержит расположенные в корпусе четыре видеокамеры, позволяющие мастеру верно определить необходимый угол колеса. Новейший стенд является сверхточным производственным инструментом. Столько стоит сделать развал схождения в нашем автосервисе всегда можно узнать по нашим контактным телефонам.</p>
+
+<p><strong>СТОИМОСТЬ РАБОТ ПО ПРОВЕРКЕ И РЕГУЛИРОВКЕ УУК</strong></p>
+
+<table class="table table-bordered">
+	<tbody>
+		<tr>
+			<td>
+			<p>Проверка УУК</p>
+			</td>
+			<td>
+			<p>Проверка УУК</p>
+			</td>
+			<td>
+			<p>Проверка УУК&nbsp;<br>
+			и регулировка 1 ось</p>
+			</td>
+			<td>
+			<p>Проверка УУК&nbsp;<br>
+			и регулировка 2 оси</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>Легковые автомобили</p>
+			</td>
+			<td>
+			<p>600 руб.</p>
+			</td>
+			<td>
+			<p>от 1200 руб.</p>
+			</td>
+			<td>
+			<p>от 1440 руб.</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>Внедорожники и микроавтобусы</p>
+			</td>
+			<td>
+			<p>600 руб.</p>
+			</td>
+			<td>
+			<p>от 1440 руб</p>
+			</td>
+			<td>
+			<p>от 1680 руб.</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+	   		</div>
+	   		<div class="modal-footer">
+        		<button type="button" class="btn btn-primary" data-dismiss="modal">Закрыть</button>
+      		</div>
+	    </div>
+	  </div>
+	</div>
+	<div class="modal fade bs-example-modal-lg" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+	  <div class="modal-dialog modal-lg" role="document">
+	    <div class="modal-content">
+	    	<div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Запрвака кондиционеров</h4>
+	      </div>
+	      <div class="modal-body">
+	   			<p>Цены на заправку и ремонт кондиционера</p>
+
+<table class="table table-bordered">
+	<tbody>
+		<tr>
+			<td style="width:420px">
+			<p><strong>Вид работ:</strong></p>
+			</td>
+			<td style="width:224px">
+			<p><strong>Легковой автомобиль</strong></p>
+			</td>
+			<td style="width:354px">
+			<p><strong>Джипы и автомобили с двумя испарителями</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>Диагностика кондиционера авто</p>
+			</td>
+			<td>
+			<p>1300 руб.</p>
+			</td>
+			<td>
+			<p>1300 руб.</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>Заправка кондиционера</p>
+			</td>
+			<td>
+			<p>2500 руб.</p>
+			</td>
+			<td>
+			<p>2500 руб.</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>Заправка кондиционера + проверка герметичности системы</p>
+			</td>
+			<td>
+			<p>3500 руб.</p>
+			</td>
+			<td>
+			<p>3500 руб.</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>Устранение запахов в салоне, антибактериальная обработка испарителя и воздуховодов</p>
+			</td>
+			<td>
+			<p>от 2000 руб. работа + очиститель</p>
+			</td>
+			<td>
+			<p>от 2000 руб. работа + очиститель</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>Ремонт второго контура (второго кондиционера)</p>
+			</td>
+			<td>&nbsp;</td>
+			<td>
+			<p>от 2000 руб.</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>Заправка автомобильных кондиционеров выполняется с использованием полуавтоматической заправочной станции . Мы производим обслуживание автомобильных кондиционеров с использованием хладагента R134A . Температура кипения хладагента R134A -26,5С при давлении 0,1МПа=1 бар. Помимо заправки наш СТО осуществляет следующий ремонт кондиционеров автомобилей в СПб:</p>
+
+<p>• Ремонт трубок и шлангов кондиционера</p>
+
+<p>• Замена и ремонт радиаторов.</p>
+
+<p>• Замена осушителей, ТРВ, испарителей.</p>
+
+<p>• Ремонт компрессоров кондиционера.</p>
+
+<p>• и другие виды услуг.</p>
+
+<p>&nbsp;</p>
+
+<p>Мы устанавливаем <strong>Webasto!</strong></p>
+
+<p>Компания АвтоДом является официальным диллером и установочным центром продукции Webasto. Мы Занимаемся установкой предпусковых обогревателей, с их помощью обогрев автомобиля происходит заранее и вы садитесь в теплый, уже разогретый автомобиль. Санкт - Петербург город с продолжительными, довольно часто суровыми, зимами и коротким летом, здесь у нас холодный сезон длится не менее пяти месяцев. Зимой двигатель автомобиля испытывает сильные нагрузки из-за частых запусков "на холодную". Именно поэтому предпусковые отопители Webasto довольно популярны в нашем регионе. В чем их особенность? Автомобильные подогреватели Webasto работают на топливе, запускаются по таймеру, с дистанционного запуска или с помощью мобильного телефона. На данный момент для работы подогревателя с полной нагрузкой требуется не больше 0.6 л топлива в час, в то время как сам двигатель, при работе в холостую тратит от 1 до 1,5 литров топлива в час. Для того чтобы прогреть двигатель при умеренном морозе до рабочей температуры вполне достаточно 15 - 30 мин, всего-то, а в итоге вы имеете экономию топлива, гарантию запуска и комфорт, так же прогретый двигатель меньше изнашивается, реже выходит из строя. Установка отопителя Webasto никак не влияет непосредственно на сам запуск двигателя, следовательно не повышается риск угона и не дорожает КАСКО (в отличие от обычного автозапуска). Ну и конечно главный плюс это когда в морозы или с утра, ты садишься в уже подготовленный автомобиль с комфортной температурой в салоне. Цены на установку предпускового отопителя Webasto на СТО АвтоДом под ключ!*</p>
+
+<table class="table table-bordered">
+	<tbody>
+		<tr>
+			<td style="height:20px; width:267px">
+			<p><strong>Марка</strong></p>
+			</td>
+			<td style="height:20px; width:86px">
+			<p><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Объем</strong></p>
+			</td>
+			<td style="height:20px; width:179px">
+			<p><strong>Сумма</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:20px; width:267px">
+			<p>Audi&nbsp; A6 C6/C7</p>
+			</td>
+			<td style="height:20px; width:86px">
+			<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 3,0&nbsp;</p>
+			</td>
+			<td style="height:20px; width:179px">
+			<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;71 100&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:20px; width:267px">
+			<p>Audi A4 b8</p>
+			</td>
+			<td style="height:20px; width:86px">
+			<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2,0&nbsp;</p>
+			</td>
+			<td style="height:20px; width:179px">
+			<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;54 900&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:20px; width:267px">
+			<p>Audi Q7</p>
+			</td>
+			<td style="height:20px; width:86px">
+			<p>&nbsp;</p>
+			</td>
+			<td style="height:20px; width:179px">
+			<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;66 710&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:20px; width:267px">
+			<p>Ford Mondeo\S-MAX\GALAXY</p>
+			</td>
+			<td style="height:20px; width:86px">
+			<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2,0&nbsp;</p>
+			</td>
+			<td style="height:20px; width:179px">
+			<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;57 040&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:20px; width:267px">
+			<p>Hyundai Santa FE</p>
+			</td>
+			<td style="height:20px; width:86px">
+			<p>&nbsp;2,0 -2,2&nbsp;</p>
+			</td>
+			<td style="height:20px; width:179px">
+			<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 45 650&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:20px; width:267px">
+			<p>Hyunday Starex</p>
+			</td>
+			<td style="height:20px; width:86px">
+			<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2,5&nbsp;</p>
+			</td>
+			<td style="height:20px; width:179px">
+			<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 56 600&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:20px; width:267px">
+			<p>Kia&nbsp; Sorento</p>
+			</td>
+			<td style="height:20px; width:86px">
+			<p>&nbsp;2,0 - 2,2&nbsp;</p>
+			</td>
+			<td style="height:20px; width:179px">
+			<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 46 560&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:20px; width:267px">
+			<p>Kia Mohave</p>
+			</td>
+			<td style="height:20px; width:86px">
+			<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 3,0&nbsp;</p>
+			</td>
+			<td style="height:20px; width:179px">
+			<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 55 560&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:20px; width:267px">
+			<p>Land Rover - FreeLander</p>
+			</td>
+			<td style="height:20px; width:86px">
+			<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2,2&nbsp;</p>
+			</td>
+			<td style="height:20px; width:179px">
+			<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 65 050&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:23px; width:267px">
+			<p>Mercedes Benz E-kl, w212 S212 c2007</p>
+			</td>
+			<td style="height:23px; width:86px">
+			<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2,2&nbsp;</p>
+			</td>
+			<td style="height:23px; width:179px">
+			<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 61 840&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:20px; width:267px">
+			<p>Mercedes Benz GL-Klassa</p>
+			</td>
+			<td style="height:20px; width:86px">
+			<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 3,0&nbsp;</p>
+			</td>
+			<td style="height:20px; width:179px">
+			<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 61 840&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:20px; width:267px">
+			<p>Mercedes Benz M-Klassa</p>
+			</td>
+			<td style="height:20px; width:86px">
+			<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 3,0&nbsp;</p>
+			</td>
+			<td style="height:20px; width:179px">
+			<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 61 840&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:20px; width:267px">
+			<p>Mitsubishi Pajero Sport II</p>
+			</td>
+			<td style="height:20px; width:86px">
+			<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2,5&nbsp;</p>
+			</td>
+			<td style="height:20px; width:179px">
+			<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 56 750&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:20px; width:267px">
+			<p>Nissan Pathfinder III</p>
+			</td>
+			<td style="height:20px; width:86px">
+			<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2,5&nbsp;</p>
+			</td>
+			<td style="height:20px; width:179px">
+			<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 62 870&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:20px; width:267px">
+			<p>Nissan X-Trail 2</p>
+			</td>
+			<td style="height:20px; width:86px">
+			<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2,0&nbsp;</p>
+			</td>
+			<td style="height:20px; width:179px">
+			<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 46 550&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:20px; width:267px">
+			<p>Ssang Yong Actyon</p>
+			</td>
+			<td style="height:20px; width:86px">
+			<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2,0&nbsp;</p>
+			</td>
+			<td style="height:20px; width:179px">
+			<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 49 220&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:20px; width:267px">
+			<p>Ssang Yong Rexton</p>
+			</td>
+			<td style="height:20px; width:86px">
+			<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2,7&nbsp;</p>
+			</td>
+			<td style="height:20px; width:179px">
+			<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 55 280&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:20px; width:267px">
+			<p>Toyota Land Cruiser 200</p>
+			</td>
+			<td style="height:20px; width:86px">
+			<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 4,5&nbsp;</p>
+			</td>
+			<td style="height:20px; width:179px">
+			<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 55 560&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:20px; width:267px">
+			<p>Toyota Prado 150</p>
+			</td>
+			<td style="height:20px; width:86px">
+			<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 3,0&nbsp;</p>
+			</td>
+			<td style="height:20px; width:179px">
+			<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 54 260&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:20px; width:267px">
+			<p>Volvo&nbsp; XC 70</p>
+			</td>
+			<td style="height:20px; width:86px">
+			<p>&nbsp;любой&nbsp;</p>
+			</td>
+			<td style="height:20px; width:179px">
+			<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 58 060&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:20px; width:267px">
+			<p>Volvo&nbsp; XC60</p>
+			</td>
+			<td style="height:20px; width:86px">
+			<p>&nbsp;любой&nbsp;</p>
+			</td>
+			<td style="height:20px; width:179px">
+			<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 58 060&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:20px; width:267px">
+			<p>VW&nbsp; Multivan T5</p>
+			</td>
+			<td style="height:20px; width:86px">
+			<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2,0&nbsp;</p>
+			</td>
+			<td style="height:20px; width:179px">
+			<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 48 160&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:20px; width:267px">
+			<p>VW&nbsp; Tiguan</p>
+			</td>
+			<td style="height:20px; width:86px">
+			<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2,0&nbsp;</p>
+			</td>
+			<td style="height:20px; width:179px">
+			<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 46 700&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:20px; width:267px">
+			<p>VW Amarok</p>
+			</td>
+			<td style="height:20px; width:86px">
+			<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2,0&nbsp;</p>
+			</td>
+			<td style="height:20px; width:179px">
+			<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 59 560&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:20px; width:267px">
+			<p>VW Touareg 2</p>
+			</td>
+			<td style="height:20px; width:86px">
+			<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 3,0&nbsp;</p>
+			</td>
+			<td style="height:20px; width:179px">
+			<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 56 420&nbsp;</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+							   		</div>
+	   		<div class="modal-footer">
+        		<button type="button" class="btn btn-primary" data-dismiss="modal">Закрыть</button>
+      		</div>
+	    </div>
+	  </div>
+	</div>
+	<div class="modal fade bs-example-modal-lg" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+	  <div class="modal-dialog modal-lg" role="document">
+	    <div class="modal-content">
+	    	<div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Ремонт дизельных двигателей</h4>
+	      </div>
+	      <div class="modal-body">
+	   			<p>Мы осуществляем компьютерную диагностику дизельных двигателей.</p>
+
+<p>Звоните и записывайтесь сегодня!&nbsp;</p>
+
+<p>Мы работаем с дизельными двигателями европейского, японского и корейского производства.</p>
+
+<p><img alt="" src="img/1111.jpg" style="float:right; height:273px; width:160px">Если у Вас Дизельный BMW, Audi или Mercedes, мы готовы взять на себя обслуживание Вашего автомобиля. Если Дизель Ford или Mazdа работают не так как хотелось, приезжайте к нам. Да и с другими автомобилями мы также работаем с удовольствием, если Ваш автомобиль оборудован одной из следующих дизельных системами впрыска типа Common Rail , Zexel, Denso, Bosch, Lucas или Delphi, мы можем предложить Вам обслуживание с использованием современного дизельного диагностического оборудования BOSCH и LAUNCH.</p>
+
+<p>Мы производим инструментальную диагностику - замер компрессии, проверку форсунок, свечей накаливания, проверку угла опережения впрыска и т.п., диагностику турбин, турбокомпрессоров и системы наддува турбированных дизельных двигателей.</p>
+
+<p><img alt="" src="img/11111.jpg" style="float:left; height:110px; width:100px">Мы устраняем неисправности путем настроек и регулировок системы впрыска и газораспределительного механизма дизельного двигателя. Россия, следуя общим тенденциям европейского рынка, всё больше и интенсивней осваивает ранее не такой популярный сегмент, как легковые автомобили с дизельным двигателем. Однако, дизельные двигатели - это сложный и тонкий механизм, который требует при эксплуатации особого подхода, который выражается, как в применении специализировнных смазочных материалов так и в правильном и регулярном обслуживании дизельного двигателя. Зачастую, для того, чтобы определить необходимость ремонта или регулировок дизельного двигателя требуется изначально произвестидиагностику дизеля.</p>
+
+<p>При правильной ДИАГНОСТИКЕ ДИЗЕЛЬНОГО ДВИГАТЕЛЯ с использованием самого современного диагностического оборудования Вы можете быть уверены, что ремонт будет осуществлён точно, быстро и с наименьшими расходами для владельца</p>
+
+<p><img alt="" src="img/11.png" style="height:276px; width:456px"></p>
+
+	   		</div>
+	   		<div class="modal-footer">
+        		<button type="button" class="btn btn-primary" data-dismiss="modal">Закрыть</button>
+      		</div>
+	    </div>
+	  </div>
+	</div>
+	<div class="modal fade bs-example-modal-lg" id="myModal7" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+	  <div class="modal-dialog modal-lg" role="document">
+	    <div class="modal-content">
+	    	<div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Техническое обслуживание</h4>
+	      </div>
+	      <div class="modal-body">
+	   			<p><strong>ТЕХНИЧЕСКОЕ ОБСЛУЖИВАНИЕ АВТОМОБИЛЕЙ </strong></p>
+<img alt="" src="img/123456.jpg" style="height:282px; width:420px; margin: 3%; float:right;">
+
+<p>Чтобы автомобиль доставлял радость в поездках и не приносил неожиданных проблем, очень важно, особенно при отправке в дальнее путешествие на машине, пройти тщательное техническое обслуживание вашего авто. Техническое обслуживание автомобилей позволит контролировать машину на дороге. В процессе эксплуатации ваш автомобиль нуждается в постоянном осмотре, уборке салона, мойке, замене неисправных запчастей, замене масла. Качественный уход за автомобилем предохранит кузов автомобиля от воздействия соли и грязи, избавит от образования коррозии на металле и продлит долговечность авто</p>
+
+<p><strong>КАК ПОДДЕРЖИВАТЬ АВТОМОБИЛЬ В ИСПРАВНОМ СОСТОЯНИИ</strong></p>
+
+<p>Станция технического обслуживания автомобилей осуществляет полный комплекс различных работ, которые связаны с восстановлением технического состояния авто. Не всегда обслуживание обходиться лишь профилактическими работами. Часто требуется детальный ремонт узлов, агрегатов, различные регулировочные работы, а также смазочные и крепёжные. Техническое обслуживание и ремонт автомобилей бывают гарантийными и послегарантийными. Первый вид работ совершается бесплатно, замена неисправных деталей при послегарантийном обслуживании требует от владельца машины определённых денежных затрат на приобретение запчастей.</p>
+
+<p><strong>ТЕХНИЧЕСКОЕ ОБСЛУЖИВАНИЕ ЛЕГКОВОГО АВТОМОБИЛЯ ВКЛЮЧАЕТ:</strong></p>
+
+<ul>
+	<li>профилактический осмотр и компьютерную диагностику с целью выявления неполадок в системах автомобиля</li>
+	<li>замену масла и другие смазочные работы</li>
+	<li>мелкий или капитальный ремонт агрегатов и узлов, если при осмотре выявлены неисправности в их системе</li>
+	<li>регулировку различных систем автомобиля</li>
+	<li>электротехнические работы</li>
+	<li>арматурные работы</li>
+	<li>необходимые окрасочные работы кузова</li>
+	<li>проверку и регулировку развал-схождения колёс</li>
+	<li>тщательный осмотр подвески автомобиля</li>
+</ul>
+
+
+<p>В зависимости от вида работ и степени их сложности они могут выполняться без снятия агрегата с авто и его разборки. Мастер осуществляет полную проверку различных креплений, зазоров, установку механизмов. Однако внешний осмотр не всегда позволяет обнаружить многие дефекты, поэтому на станции техобслуживания применяется современное диагностическое оборудование, способное дать полную информацию о состоянии вашего автомобиля.</p>
+
+<p>Стоимость технического обслуживания автомобилей зависит от многих факторов и варьируется в различных пределах. Незначительные мелкие профилактические работы обойдутся владельцу автомобиля намного дешевле, чем сложный капитальный ремонт агрегата или кузова. Однако не смотря на затраты, которые постоянно требует ваш «железный друг», проведение технического обслуживания автомобилей очень важно в любой сезон для полного обеспечения безопасности на дороге. На каждый вид работ имеются; установленные станцией различные; цены на техническое обслуживание автомобилей.</p>
+
+
+<p>Существует несколько видов диагностики технического состояния автомобиля:</p>
+<img alt="" src="img/1234567.jpg" style="height:280px; width:420px;">
+<ul>
+	<li>специальный стенд для проверки системы зажигания</li>
+	<li>стенд для проверки кривошипного- шатунного механизма</li>
+	<li>стенд для определения мощности двигателя</li>
+	<li>стенд для проверки эффективности торможения колёс</li>
+</ul>
+
+<p>Только тщательная компьютерная диагностика технического состояния автомобиля позволит выявить и устранить сложные дефекты и неисправности.;Своевременное техническое обслуживание вашего автомобиля позволит вам не беспокоиться о внезапной поломке во время совершения поездки, чувствовать себя за рулём спокойно и уверено.
+</p><img alt="" src="img/12345.jpg" style="max-width:80%; margin:3%;">
+
+<p>Расценки на некоторые виды работ:</p>
+<div class="table-responsive">
+	<table class="table table-bordered">
+		<tbody>
+			<tr>
+				<th>
+					Наименование работ
+				</th>
+				<th>
+					Цена
+				</th>
+			</tr>
+			<tr>
+				<td>
+					Стоимость нормо-часа
+				</td>
+				<td>
+					от 1500 рублей
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Замена масла
+				</td>
+				<td>
+					от 600 рублей
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Замена масляного фильтра
+				</td>
+				<td>
+					от 450 рублей
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Замена тормозной жидкости
+				</td>
+				<td>
+					от 450 рублей
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Замена воздушного фильтра
+				</td>
+				<td>
+					от 100 рублей
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Замена колодок (1 ось)
+				</td>
+				<td>
+					от 900 рублей
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Замена колодок и тормозных дисков (1 ось)
+				</td>
+				<td>
+					от 1800 рублей
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Контрольный осмотр подвески
+				</td>
+				<td>
+					600 рублей
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Замена сайлент-блоков
+				</td>
+				<td>
+					от 1800 рублей
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Замена ступичных подшипников
+				</td>
+				<td>
+					от 1600 рублей
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>Данные расценки являются справочными и могут варьироваться как в большую, так и в меньшую сторону в зависимости от марки и модели автомобиля, его конкретных конструктивных особенностей. Некоторые работы не проводятся без предварительной диагностики и необходимых обязательных предварительных работ, в том числе и по рекомендации завода изготовителя</p>
+
+<p>Записаться на техническое обслуживание автомобиля можно по телефону<strong> +7 (921) 595 70 08</strong></p>	   		</div>
+	   		<div class="modal-footer">
+        		<button type="button" class="btn btn-primary" data-dismiss="modal">Закрыть</button>
+      		</div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="modal fade bs-example-modal-lg" id="myModal8" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+	  <div class="modal-dialog modal-lg" role="document">
+	    <div class="modal-content">
+	    	<div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Ремонт лодочных моторов</h4>
+	      </div>
+	      <div class="modal-body">
+	   			<p>Ремонт лодочных моторов в Лодейном поле</p>
+
+<p>Моторы для катеров и лодок — сложные агрегаты, обслуживание которых должны производить только профессионалы. Современные двигатели — мощные и технологичные устройства, разобраться в которых достаточно сложно без специальных знаний и образования.</p>
+
+<p>Домашний умелец вполне может справиться с устранением неисправностей лодочного мотора мощностью в 5 лошадиных сил, но более мощные четырехтактные агрегаты с системами блокировки, аварийной защитой и гидравлическими подъемниками доступны только профессионалам.</p>
+
+<p><strong>Ремонт лодочных моторов в Лодейном Поле </strong></p>
+<p>Ремонт лодочных моторов в Лодейном Поле профессионально, качественно, с гарантиями производит сервисный центр “АвтоДом” — мы направляем к вам специалиста высокой квалификации с профессиональным инструментом, навыками и знаниями, комплектом легально закупленных запасных частей.</p>
+
+<p>Несмотря на необходимость <strong>профессионального обслуживания</strong>, часть проблем вы можете устранить самостоятельно:</p>
+<ul>
+	<li>промывка фильтра топливной системы</li>
+	<li>проверка соединения шлангов подачи топлива</li>
+	<li>отсутствие искры зажигания</li>
+	<li>загрязнения свечей</li>
+	<li>отсутствие “массы”</li>
+	<li>промывка топливного бака</li>
+</ul>
+<p><img alt="" src="img/044.jpg" style="height:335px; width:450px"></p>
+
+<p>Если вы не уверены в своих знаниях — не рискуйте дорогим агрегатом, обратитесь в сервисный центр “АвтоДом” по телефону и запишитесь на ремонт.</p>
+
+<p>Вам будет предоставлена гарантия на ремонт и запчасти, выписан подробный отчет.</p>
+
+<p>Мастер устранит все неисправности:</p>
+
+<p>Мастер диагностирует, отремонтирует, проведет профилактические работы на подвесном и стационарном лодочном моторе любого типа и производителя! Профессиональное обслуживание и ремонт мотора лодки и катера — услуга от “АвтоДом” Мастер диагностирует, отремонтирует, проведет профилактические работы на подвесном и стационарном лодочном моторе любого типа и производителя! Профессиональное обслуживание и ремонт мотора лодки и катера — услуга от “АвтоДом”</p>
+
+<p>Мы осуществляем ремонт любой сложности и техническое обслуживание ПОДВЕСНЫХ ЛОДОЧНЫХ МОТОРОВ, следующих производителей: SUZUKI, YAMAHA, HONDA, MERCURY, TOHATSU.</p>
+
+<p>Ниже приведена таблица ориентировочной стоимости работ (без стоимости запасных частей и расходных материалов) </p>
+
+<table class="table table-bordered">
+	<tbody>
+		<tr>
+			<th>
+				№ п/п
+			</th>
+			<th>
+				Наименование работ
+			</th>
+			<th>
+				Наименование техники
+			</th>
+			<th>
+				стоимость работ (руб)
+			</th>
+		</tr>
+		<tr>
+			<td rowspan="7" style="height:36px; width:21px">
+				1
+			</td>
+			<td rowspan="7" style="height:36px">Сезонное Техническое обслуживание лодочного мотора: замена масла в двигателе и масляного фильтра (для 4-х тактных двигателей), замена масла в редукторе, протяжка, шприцовка точек, проверка на ходу 
+			</td>
+			<td style="height:36px">
+				любые лод.моторы от 2 до 3,5 л.с
+			</td>
+			<td rowspan="2" style="height:36px">
+				1300 руб
+			</td>
+		</tr>
+		<tr>
+			<td style="height:36px">
+				2-х тактные лод.моторы от 4 до 8 л.с
+			</td>
+		</tr>
+		<tr>
+			<td style="height:36px">
+				2-х тактные лод.моторы от 9,9 до 30 л.с
+			</td>
+			<td style="height:36px">
+				2000 руб
+			</td>
+		</tr>
+		<tr>
+			<td style="height:36px">
+				2-х тактные лод.моторы 40 л.с
+			</td>
+			<td style="height:36px">
+				2500 руб
+			</td>
+		</tr>
+		<tr>
+			<td style="height:36px">
+				4-х тактные лод. моторы от 4 до 6 л.с
+			</td>
+			<td style="height:36px">
+				1500 руб
+			</td>
+		</tr>
+		<tr>
+			<td style="height:36px">
+				4-х тактные лод. моторы от 8 до 25 л.с<strong>(карбюраторные)</strong>
+			</td>
+			<td style="height:36px">
+				2000 руб
+			</td>
+		</tr>
+		<tr>
+			<td style="height:36px">
+				4-х тактные лод. моторы от 30 до 300 л.с (включая компьютерную диагностику)
+			</td>
+			<td style="height:36px">
+				4000 руб
+			</td>
+		</tr>
+		<tr>
+			<td style="height:72px; width:21px"> </td>
+			<td style="height:72px"> </td>
+			<td style="height:72px">
+				4-х тактные лод. <strong>инжекторные</strong> моторы<strong>SUZUKI </strong>от 9.9 до 30 л.с. <br>
+			(включая компьютерную диагностику)
+			</td>
+			<td style="height:72px">
+				2500 руб.
+			</td>
+		</tr>
+		<tr>
+			<td style="height:72px; width:21px">
+				2
+			</td>
+			<td style="height:72px">
+				Чистка карбюратора и топливной
+
+				системы лод.мотора
+			</td>
+			<td style="height:72px">
+				Один карбюратор + топливная система
+			</td>
+			<td style="height:72px">
+				2000 руб
+			</td>
+		</tr>
+		<tr>
+			<td rowspan="2" style="height:36px; width:21px">
+				3
+			</td>
+			<td rowspan="2" style="height:36px">
+				Чистка инжекторной топливной
+
+				системы лод. мотора
+			</td>
+			<td style="height:36px">
+				4-х тактные лод.моторы от 40 до 140 л.с
+			</td>
+			<td style="height:36px">
+				6500 руб
+			</td>
+		</tr>
+		<tr>
+			<td style="height:36px">
+				4-х тактные лод.моторы от 150 до 300 л.с
+			</td>
+			<td style="height:36px">
+				4000 руб
+			</td>
+		</tr>
+		<tr>
+			<td style="height:72px; width:21px">
+				4
+			</td>
+			<td style="height:72px">
+				Компьютерная диагностика
+
+				инжекторного лод.мотора
+			</td>
+			<td style="height:72px">
+				4-х тактные лод.моторы от 40 до 300 л.с
+			</td>
+			<td style="height:72px">
+				2000 руб
+			</td>
+		</tr>
+		<tr>
+			<td rowspan="4" style="height:35px; width:21px">
+				5
+			</td>
+			<td rowspan="4" style="height:35px">
+				Восстановление герметичности редуктора
+			</td>
+			<td style="height:35px">
+				любые лод.моторы от 2 до 3,5 л.с
+			</td>
+			<td style="height:35px">
+				2000 руб
+			</td>
+		</tr>
+		<tr>
+			<td style="height:35px">
+				любые лод.моторы от 4 до 18 л.с
+			</td>
+			<td style="height:35px">
+				2500 руб
+			</td>
+		</tr>
+		<tr>
+			<td style="height:35px">
+				любые лод. моторы от 20 до 60 л.с.
+			</td>
+			<td style="height:35px">
+				3000 руб
+			</td>
+		</tr>
+		<tr>
+			<td style="height:35px">
+				любые лод. моторы от 90 до 300 л.с.
+			</td>
+			<td style="height:35px">
+				3000 руб
+			</td>
+		</tr>
+		<tr>
+			<td rowspan="2" style="height:36px; width:21px">
+				6
+			</td>
+			<td rowspan="2" style="height:36px">
+				Полный ремонт редуктора
+
+				БЕЗ ремонта корпуса
+			</td>
+			<td style="height:36px">
+				4-х тактные лод.моторы от 50 до 140 л.с
+			</td>
+			<td style="height:36px">
+				6000 руб
+			</td>
+		</tr>
+		<tr>
+			<td style="height:36px">
+				4-х тактные лод.моторы от 150 до 300 л.с
+			</td>
+			<td style="height:36px">
+				7500 руб
+			</td>
+		</tr>
+		<tr>
+			<td style="height:36px; width:21px">
+				7
+			</td>
+			<td style="height:36px">
+				Снятие редуктора с мотора
+			</td>
+			<td style="height:36px">
+				4-х тактные лод.моторы от 30 до 300 л.с
+			</td>
+			<td style="height:36px">
+				1000 руб
+			</td>
+		</tr>
+		<tr>
+			<td style="height:35px; width:21px">
+				8
+			</td>
+			<td style="height:35px">
+				Установка редуктора на мотор
+			</td>
+			<td style="height:35px">
+				4-х тактные лод.моторы от 40 до 300 л.с
+			</td>
+			<td style="height:35px">
+				1500 руб
+			</td>
+		</tr>
+		<tr>
+			<td style="height:35px; width:21px">
+				9
+			</td>
+			<td style="height:35px">
+				Снятие мотора с катера
+			</td>
+			<td style="height:35px">
+				4-х тактные лод.моторы от 40 до 300 л.с
+			</td>
+			<td style="height:35px">
+				4000 руб
+			</td>
+		</tr>
+		<tr>
+			<td style="height:36px; width:21px">
+				10
+			</td>
+			<td style="height:36px">
+				Установка мотора на катер
+			</td>
+			<td style="height:36px">
+				4-х тактные лод.моторы от 40 до 300 л.с
+			</td>
+			<td style="height:36px">
+				4000 руб
+			</td>
+		</tr>
+		<tr>
+			<td rowspan="3" style="height:34px; width:22px">
+				11
+			</td>
+			<td rowspan="3" style="height:34px; width:283px">
+				 
+
+				 Замена Крыльчатки
+			</td>
+			<td style="height:34px; width:270px">
+				любые лод.моторы от 2 до 18 л.с
+			</td>
+			<td style="height:34px; width:123px">
+				2000 руб
+			</td>
+		</tr>
+		<tr>
+			<td style="height:34px; width:270px">
+				любые лод.моторы от 20 до 30 л.с.
+			</td>
+			<td style="height:34px; width:123px">
+				2300 руб
+			</td>
+		</tr>
+		<tr>
+			<td style="height:34px; width:270px">
+				4-х тактные лод.моторы от 40 до 300 л.с
+			</td>
+			<td style="height:34px; width:123px">
+				2500 руб
+			</td>
+		</tr>
+		<tr>
+			<td style="height:34px; width:22px">
+				12
+			</td>
+			<td style="height:34px; width:283px">
+				  Восстановление корпуса редуктора
+			</td>
+			<td style="height:34px; width:270px">
+				любые лод.моторы от 40 до 300 л.с
+			</td>
+			<td style="height:34px; width:123px">
+				После осмотра
+			</td>
+		</tr>
+		<tr>
+			<td rowspan="10" style="height:34px; width:22px">
+				13
+			</td>
+			<td style="height:34px; width:283px">
+				  Полная переборка мотора
+			</td>
+			<td style="height:34px; width:270px">
+				4-х тактные лод.моторы от 2,5 до 6 л.с
+			</td>
+			<td style="height:34px; width:123px">
+				6000 руб
+			</td>
+		</tr>
+		<tr>
+			<td style="height:35px; width:283px">
+				  БЕЗ стоимости расточки
+			</td>
+			<td style="height:35px; width:270px">
+				4-х тактные лод.моторы от 8 до 20 л.с
+			</td>
+			<td style="height:35px; width:123px">
+				7500 руб
+			</td>
+		</tr>
+		<tr>
+			<td style="height:35px; width:283px">
+				  БЕЗ стоимости шлифовки головки и блока
+			</td>
+			<td style="height:35px; width:270px">
+				4-х тактные лод.моторы 25 л.с
+			</td>
+			<td style="height:35px; width:123px">
+				11000 руб
+			</td>
+		</tr>
+		<tr>
+			<td rowspan="7" style="height:35px; width:283px">
+				 
+
+				  БЕЗ стоимости сварки аргоном
+			</td>
+			<td style="height:35px; width:270px">
+				2-х тактные лод.моторы от 2 до 6 л.с
+			</td>
+			<td style="height:35px; width:123px">
+				5500 руб
+			</td>
+		</tr>
+		<tr>
+			<td style="height:35px; width:270px">
+				2-х тактные лод.моторы от 8 до 15 л.с
+			</td>
+			<td style="height:35px; width:123px">
+				7500 руб
+			</td>
+		</tr>
+		<tr>
+			<td style="height:34px; width:270px">
+				2-х тактные лод.моторы от 30 до 40 л.с
+			</td>
+			<td style="height:34px; width:123px">
+				8500 руб
+			</td>
+		</tr>
+		<tr>
+			<td style="height:70px; width:270px">
+				4-х тактные SUZUKI модификации (А)
+
+				лодочные моторы от 40 до 90 л.с.
+			</td>
+			<td rowspan="2" style="height:70px; width:123px">
+				по 
+
+				договоренности
+			</td>
+		</tr>
+		<tr>
+			<td style="height:35px; width:270px">
+				4-х тактные лод.моторы от 40 до 70 л.с
+			</td>
+		</tr>
+		<tr>
+			<td style="height:70px; width:270px">
+				4-х тактные лод.моторы от 90 до 175 л.с
+			</td>
+			<td style="height:70px; width:123px">
+				по 
+
+				договоренности
+			</td>
+		</tr>
+		<tr>
+			<td style="height:69px; width:270px">
+				4-х тактные лод.моторы от 200 до 300 л.с
+			</td>
+			<td style="height:69px; width:123px">
+				по 
+
+				договоренности
+			</td>
+		</tr>
+		<tr>
+			<td style="height:34px; width:22px">
+				14
+			</td>
+			<td style="height:34px; width:283px">
+				Установка реле регулятора (комплекта)
+			</td>
+			<td style="height:34px; width:270px">
+				любые лод.моторы от 15 до 40 л.с
+			</td>
+			<td style="height:34px; width:123px">
+				2000 руб
+			</td>
+		</tr>
+		<tr>
+			<td style="height:34px; width:22px">
+				15
+			</td>
+			<td style="height:34px; width:283px">
+				Замена гребного винта
+			</td>
+			<td style="height:34px; width:270px">
+				любые лодочные моторы
+			</td>
+			<td style="height:34px; width:123px">
+				500 руб
+			</td>>
+		</tr>
+		<tr>
+			<td rowspan="2" style="height:34px; width:22px">
+				16
+			</td>
+			<td rowspan="2" style="height:34px; width:283px">
+				Консервация двигателя мотора
+			</td>
+			<td style="height:34px; width:270px">
+				2-х тактные лод.моторы от 2 до 8 л.с
+			</td>
+			<td style="height:34px; width:123px">
+				1000 руб
+			</td>
+		</tr>
+		<tr>
+			<td style="height:35px; width:270px">
+				2-х тактные лод.моторы от 9.9 до 40 л.с
+			</td>
+			<td style="height:35px; width:123px">
+				1500 руб
+			</td>
+		</tr>
+		<tr>
+			<td style="height:69px; width:22px">
+				17
+			</td>
+			<td style="height:69px; width:283px">
+				Оценка стоимости ремонта
+
+				(в случае отказа от ремонта)
+			</td>
+			<td style="height:69px; width:270px">
+				любые лод.моторы от 2 до 300 л.с
+			</td>
+			<td style="height:69px; width:123px">
+				1500 р. за час
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><em>Примечание сервиса</em>:</p>
+
+<p>1. Данный прейскурант цен за выполняемые работы составлен из расчета 1000 рублей за один час работы.</p>
+
+<p>2. Под термином выполняемые работы подразумевается и оплачивается клиентом услуга:</p>
+
+<ol>
+	<li>  Выбраковка</li>
+	<li>  Подбор запасных частей по каталогам</li>
+	<li>  Согласование с клиентом</li>
+	<li>  Оформление документов и заказов</li>
+	<li>  Выгрузка и погрузка мотора</li>
+</ol>
+
+<p>3. В случае, когда фактически затраченное на работу время, умноженное на стоимость работ в час, отличается от стоимости таких работ по данному прейскуранту – стоимость выполненных работ, соответственно, изменяется в большую или меньшую сторону соразмерно.</p>
+
+<p> ВНИМАНИЕ:</p>
+
+<p>За подвесные лодочные моторы или их части, оставленные в сервисе, после завершения работ по их обслуживанию или ремонту более чем на семь календарных дней, взымается плата за хранение из расчета 100 руб в сутки. </p>	   		</div>
+	   		<div class="modal-footer">
+        		<button type="button" class="btn btn-primary" data-dismiss="modal">Закрыть</button>
+      		</div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="modal fade bs-example-modal-lg" id="myModal9" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+	  <div class="modal-dialog modal-lg" role="document">
+	    <div class="modal-content">
+	    	<div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Диагностика и ремонт дизельных генераторов</h4>
+	      </div>
+	      <div class="modal-body">
+	   			<h3>Ремонт бензиновых и дизель генераторов</h3>
+<p>Качественный ремонт и техническое обслуживание бензиновых генераторов.</p>
+
+<p>Сервисный центр компании, предлагает к вашим услугам ремонтные работы и качественное обслуживание бензиновых генераторов от любых производителей силой до 8.0 кВт.<br>
+Если вы хотите рассчитать примерную стоимость или узнать срок ремонтных работ, свяжитесь по телефону или воспользуйтесь возможностью подать заявку через интернет. Всю более подробные результаты можно будет получить после подробного осмотра специалистами в самом центре.</p>
+
+<table class="table table-bordered">
+	<tbody>
+		<tr>
+			<td>
+				Aurora<br>
+				CHAMPION<br>
+				DDE<br>
+				Elemax<br>
+				ELITECH<br>
+				Endress<br>
+				ENERGY<br>
+				ERGOMAX<br>
+				Etalon<br>
+				Europower<br>
+				Fubag
+			</td>
+			<td>
+				FERRUA<br>
+				FOGO<br>
+				GEKO<br>
+				GENCTAB<br>
+				GENERAL<br>
+				GREEN-FIELD<br>
+				Hammermann<br>
+				HITACHI<br>
+				HONDA<br>
+				HUTER<br>
+				Hyundai
+			</td>
+			<td>
+				KIPOR<br>
+				PRAMAC<br>
+				PRORAB<br>
+				SDMO<br>
+				United Power<br>
+				Yanmar<br>
+				Wolsh<br>
+				Алинтер<br>
+				КРАТОН<br>
+				СПЕЦ<br>
+				ТСС ЭЛАД<br>
+				ЭНЕРГО
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><strong>Ремонт бензиновых генераторов</strong></p>
+<img alt="Ремонт бензиновых генераторов" src="img/18.jpg" >
+
+<p>Также высококлассные мастера могут по вашему желанию проведут техническое обслуживание и ответят на все ваши вопросы по наилучшему использованию вашей техники, чтобы проблем с эксплуатацией не возникало. Техосмотр рекомендуется проводить через каждые 500 моточасов использования, даже если нет видимых причин для этого. Запомните это правило, и ваша техника прослужит дольше. При правильном использовании, своевременном обращении в сервисный центр, получение консультаций от профессионалов вам не придётся беспокоиться о лишних тратах на новую технику.<br>
+В центре в наличие нужные материалы для замены (если она требуется).<br>
+Мастера данного центра вам помогут, если вам требуется:<br>
+— осмотр для профилактики;<br>
+— установить причину отказа;<br>
+— поменять части, пришедшие в негодность;<br>
+— осмотр карбюратора;<br>
+— все виды ремонта (двигателя, системы зажигания и др.).<br>
+Для качественного и быстрого осмотра, ремонта, правильной диагностики, в сервисном центре имеется: своя база по ремонту, оснащение для диагностики, специальный инструмент, техническая литература.<br>
+При ремонте специалисты обязательно учитывают пожелания и требования заводов- изготовителей по эксплуатации и опираются на свои знания и большой собственный опыт.<br>
+Время, через которое проводится ремонт, зависит от качества двигателя и условий пользования бензиновым генератором.<br>
+Предлагается ремонт техники следующих производителей: Fubag, Hammermann, KIPOR, Aurora, CHAMPION, DDE, Elemax, ELITECH, Endress, ENERGY, Europower,<br>
+Fubag, FOGO, GEKO, GENCTAB, SDMO, Wolsh, Алинтер, КРАТОН, СПЕЦ, ЭНЕРГО и многих других марок ( как распространённых и известных всем, так и не пользующихся сильной популярностью).<br>
+Оплата производится как наличным, так и безналичным расчётом.</p>
+
+
+<p><strong>Ремонт дизельных генераторов в Санкт-Петербурге</strong></p>
+<p><strong>Работы по диагностике и сервисному обслуживанию дизельных генераторов</strong></p>
+
+<p>
+	<img alt="Ремонт дизельных генераторов" src="img/19.jpg" style="height:200px; width:300px">Ремонт дизельных генераторов<br>
+	Специалистами компании проводится весь объем сервисных работ, электрической и механической диагностики дизельных генераторов любого уровня. Все работы ведутся в строгом соответствии с рекомендациями и инструкциями фирм — изготовителей, непосредственно на местах монтажа оборудования.
+</p>
+
+<p>В комплекс работ, выполняемых компанией, входят:</p>
+<ul>
+	<li>работы по измерению сопротивления изоляций</li>
+	<li>работы по определению состояния обмоток</li>
+	<li>проверки состояний вращающихся диодов</li>
+	<li>проверки состояний противоконденсатных нагревателей</li>
+	<li>проверки состояний противоконденсатных нагревателей</li>
+	<li>замены подшипников</li>
+	<li>замены вкладышей подшипников скольжения</li>
+	<li>проверки состояний шеек валов</li>
+	<li>проверки работоспособности электронных регуляторов напряжения</li>
+	<li>и другие необходимые работы</li>
+</ul>
+<p>Исполнение капитальных ремонтных работ</p>
+
+<p>Капитальные ремонтные работы на дизельных генераторах исполняются в полном соответствии с документацией изготовителя на базе сервис-центра компании.</p>
+
+<p>В случае необходимости, фирма организует выезды технического персонала на площадки клиентов, транспортирование агрегатов в собственный сервис-центр и обратно к месту эксплуатации.</p>
+
+<p><strong>Порядок проведения работ:</strong></p>
+
+
+<p><img alt="Ремонт электростанций" src="img/20.jpg">
+Сначала специалисты фирмы произведут контрольную сверку параметров. После чего будет составлен акт дефектации дизельного генератора, к которому будет приложен перечень предлагаемых восстановительных работ и список запчастей, которые подлежат замене. Общая стоимость работ и запчастей указывается в спецификациях (предложениях). Там же будут определены сроки исполнения работы с учетом возможного заказа запчастей, в тех случаях, когда нужного ассортимента нет в данный момент на складе компании.</p>
+
+<p><em>На финальной стадии восстановительных мероприятий дизельные генераторы проходят ряд тестов под нагрузками. Такое тестирование возможно проводить на площадках заказчиков.</em></p>
+
+<p>Гарантия, устанавливаемая фирмой на дизельные генераторы, которые подвергались капитальным ремонтным работам или комплексному восстановлению, составляет тысячу мото-часов, но не более полугода со дня подписания актов о завершении работ.</p>
+
+<p><em>Если заказчик заинтересован в продлении гарантийного срока до полутора лет, компания предлагает заключение сервисного договора, в котором прописывается регламентация исполнения техобслуживания специалистами фирмы.</em></p>
+
+<p>Ремонт электростанций Вы можете оплатить за наличный или безналичный расчёт.</p>							   		</div>
+	   		<div class="modal-footer">
+        		<button type="button" class="btn btn-primary" data-dismiss="modal">Закрыть</button>
+      		</div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="modal fade bs-example-modal-lg" id="myModal10" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+	  <div class="modal-dialog modal-lg" role="document">
+	    <div class="modal-content">
+	    	<div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Запчасти</h4>
+	      </div>
+	      <div class="modal-body">
+	   			<p>Розничный - Оптовый отдел</p>
+
+<p><img alt="" src="img/1%D0%B0.jpg" style="height:227px; max-width:900px"></p>
+
+<p>Региональный оптовый отдел АвтоДом, являясь дилером Ashika, ATE, Depo, LUK, Mahle, TYG и еще более 30 заводов и фирм производителей запасных частей, предлагает широкий ассортимент новых, а так же б/у запасных частей с 10 действующих разборок АвтоДом с доставкой транспортными компаниями в любую часть России.</p>
+
+<p>Ваши запасные части Вы можете приобрести сейчас через наших партнеров или стать одним из них уже сегодня</p>
+
+<p>Вопросы работы ОПТ и безналичному расчету:</p>
+
+<p>
+	<strong>Отдел работает с 9:00 до 18:00 (время московское)<br>
+	Суббота и воскресенье – выходные дни.</strong>
+</p>
+
+<p>&nbsp;</p>
+
+<p>Розничный - Оптовый отдел</p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<strong>Новые детали надлежащего качества (не брак)</strong></p>
+
+<p>Возврат новых деталей надлежащего качества возможен при соблюдении следующих условий:</p>
+
+<p>1.&nbsp;&nbsp;&nbsp;&nbsp; Соблюдены сроки возврата. Для новых деталей надлежащего качества срок возврата составляет 14 календарных дней с момента получения клиентом.</p>
+
+<p>2.&nbsp;&nbsp;&nbsp;&nbsp; Сохранен товарный вид, потребительские свойства, пломбы, фабричные ярлыки. В случае если была необходимость вскрыть упаковку - требуются фотографии возвращаемого товара рядом с его упаковкой.</p>
+
+<p>3.&nbsp;&nbsp;&nbsp;&nbsp; Возможность возврата согласована с менеджером регионального отдела компании "АвтоДом".</p>
+
+
+
+<p><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Новые детали, брак (гарантийные обязательства)</strong></p>
+
+<p>Возврат деталей не надлежащего качества (бракованные детали) возможен при соблюдении следующих условий:</p>
+
+<p>1.&nbsp;&nbsp;&nbsp;&nbsp; Соблюдены сроки возврата. Для новых деталей не надлежащего качества срок возврата составляет 2 календарных месяца (60 дней).</p>
+
+<p>2.&nbsp;&nbsp;&nbsp;&nbsp; Возможность возврата согласована с менеджером регионального отдела компании "АвтоДом".</p>
+
+<p>3.&nbsp;&nbsp;&nbsp;&nbsp; Составлены следующие сопроводительные документы бракованных авто запчастей:
+<ul>
+	<li>копия лицензии СТО</li>
+	<li>заказ-наряд на проведение данных ремонтных работ (установка, замена позиции)</li>
+	<li>акт о выявлении дефекта данной позиции</li>
+</ul>
+</p>
+
+<p>* При соблюдении вышеперечисленных условий, наличие заводского брака оценивается техническими специалистами «АвтоДом».</p>
+
+<p>&nbsp;</p>
+
+<p>Возврат б/у деталей, приобретенных с разборки возможен при соблюдении следующих условий:</p>
+
+<p>1.&nbsp;&nbsp;&nbsp;&nbsp; Соблюдены сроки возврата.</p>
+
+<p>§&nbsp; Для региональных клиентов, находящихся за пределами г. Санкт-Петербурга и Ленинградской области на б/у детали с разборки срок возврата составляет 5 календарных дней с момента получения груза клиентом. В случае необходимости проверки сложных б/у агрегатов на работоспособность (КПП, АКПП, блоки двигателей и т.д.) срок проверки 7 (семь) календарных дней (по согласованию с менеджером).</p>
+
+<p>§&nbsp; Для клиентов, находящихся в г, Санкт-Петербург сроки возврата на б/у детали составляет 3 календарных дня. В случае необходимости проверки сложных б/у агрегатов на работоспособность (КПП, АКПП, блоки двигателей и т.д.) срок проверки можно увеличить до 5 (пяти) рабочих дней (по согласованию с менеджером).</p>
+
+<p>2.&nbsp;&nbsp;&nbsp;&nbsp; Сохранены все метки и ярлыки, снятия каких-либо элементов или вскрытия агрегатов не производилось.</p>
+
+<p>3.&nbsp;&nbsp;&nbsp;&nbsp; Возможность возврата согласована с менеджером регионального отдела компании "АвтоДом".</p>
+
+<p>4.&nbsp;&nbsp;&nbsp;&nbsp; Деталь «Двигатель» продается как набор запасных частей для ремонта двигателя - возврат и обмен осуществляется по согласованию с менеджером.</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>Согласование возможности возвратов</strong></p>
+
+<p>Возвраты новых и б/у запчастей от региональных клиентов принимаются только при наличии согласования с менеджером регионального отдела. Для согласования необходимо заполнить форму возврата на сайте в разделе&nbsp;</p>
+
+<p>* При отсутствии согласования компания "АвтоДом" оставляет за собой право не принимать данный возврат.</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>Список деталей не подлежащих возврату</strong></p>
+
+<p>§&nbsp; Отрезные кузовные элементы (крыша, лонжероны, задние стойки и т. д.) обмену и возврату не подлежат.</p>
+
+<p>§&nbsp; Кузовные детали новые и б/у, доставляемые перевозчиком (Транспортной Компанией) без заказанной клиентом обрешетки и поврежденные в процессе перевозки (доставки).</p>
+
+<p>§&nbsp; Детали с нарушением первоначального вида при отправке Покупателю, в том числе по вине перевозчика (Транспортной Компании).</p>
+
+<p>§&nbsp; Новые детали с нарушением заводской упаковки либо с утраченной упаковкой.</p>
+
+<p>§&nbsp; Проводка (коса).</p>
+
+<p>§&nbsp; Обшивка потолка.</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<strong>Возможные компенсации</strong></p>
+
+<p>§&nbsp; В случае возврата новой детали не надлежащего качества (брак) компания «АвтоДом» компенсирует доставку возврата при соблюдении вышеперечисленных условий.</p>
+
+<p>§&nbsp; В случае возврата б/у детали не надлежащего качества (брак) компания «АвтоДом» компенсирует доставку возврата при соблюдении вышеперечисленных условий. Компенсация не распространяется на возвраты запчастей, в которых были обнаружены скрытые дефекты.</p>
+
+<p>*Компенсация зачисляется на баланс покупателя при предоставлении копий в электронном виде квитанций и чеков об оплате доставки перевозчику (Транспортной Компании).</p>
+
+<p>**Первоначальная доставка товара Покупателю компенсации не подлежит.</p>
+
+<p>***В случае выявления техническими специалистами «АвтоДом» нарушения технологии монтажа детали компенсации не предусмотрены. Клиент вправе провести независимую техническую экспертизу и предоставить документы на рассмотрение менеджеру.</p>
+
+<p>Список причин возврата, подлежащх компенсации:</p>
+
+<p>§&nbsp; Несоответствие заявленного качества товара.</p>
+
+<p>§&nbsp; Несоответствие заявленной информации о товаре (модель, наименование, примечание).</p>
+
+<p>§&nbsp; Несоответствие указанному оригинальному номеру.</p>
+
+<p>&nbsp;</p>
+
+<p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Штрафы и удержания</strong></p>
+
+<p>&nbsp;&nbsp;&nbsp; При несоблюдении любого из вышеперечисленных пунктов компания «АвтоДом» оставляет за собой право отказать в возврате либо вернуть денежные средства с удержанием от отпускной цены детали для данного клиента на 20 и более процентов (процент удержания устанавливается в каждом конкретном случае менеджером компании «АвтоДом»</p><!-- 
+
+
+
+	<table class="table table-bordered">
+		<tbody>
+			<tr>
+				<td><p><strong>УСЛОВИЯ СОТРУДНИЧЕСТВА</strong></p></td>
+			</tr>
+			<tr>
+				<td>
+				<p>Настоящим документом определяются основные условия сотрудничества с партнёром&nbsp;АвтоДом<br>
+				&nbsp;</p>
+
+				<p>Заявка на партнерство означает согласие со всеми пункатами данного документа.</p>
+
+				<p><strong>Партнёр обязуется:</strong></p>
+
+				<ol>
+					<li>Предоставлять полную и достоверную информацию при регистрации на сайте.</li>
+					<li>Своевременно вносить изменения в контактную информацию, адрес&nbsp; и т.п., в том числе при закрытии деятельности.</li>
+					<li>Осуществлять заказы с использованием сайта http://avtodom-lp.ru. Компания &nbsp;АвтоДом<br>
+					&nbsp;не гарантирует правильное и своевременное выполнение заказа, размещённого не через сайт.</li>
+					<li>Осуществлять полную и своевременную оплату товара.</li>
+					<li>Полностью отвечать за все действия, в том числе финансовые перед своими клиентами.</li>
+					<li>Уточнять состояние б/у детелей, а именно, степень износа, комплектность, применимость и т.п.,</li>
+					<li>&nbsp;до заказа непосредственно у склада хранения товара с использованием электронной почты, чата, &nbsp;&nbsp;телефона и т.п.</li>
+					<li>Принимать полную ответственность за правильность подбора деталей перед клиентом.</li>
+					<li>Точно соблюдать правила возврата товара в компанию &nbsp;АвтоДом.</li>
+					<li>Исключать обращение клиента напрямую в компанию &nbsp;АвтоДом&nbsp;для разрешения конфликта между клиентом и партнёром.</li>
+					<li>Заказать и оплатить дополнительную упаковку товара, требующего особых бережных условий перевозки, о чём извещать перевозчика и/или менеджера компании&nbsp;АвтоДом</li>
+					<li>Принимать груз по качеству (внешний вид) и количеству непосредственно в транспортной компании.</li>
+					<li>В случае повреждения упаковки и(или) товара в пути, а также несоответствия количества</li>
+					<li>указанному в накладной, составлять и подписывать акт осмотра груза и состояния упаковки вместе с представителем</li>
+					<li>транспортной компании.&nbsp;</li>
+					<li>Самостоятельно и за свой счёт организовавать процесс работы с клиентом, подбор товара,</li>
+					<li>&nbsp;подписание договоров ,получение денег и т.п. В этом случае действительны предлагаемые оптовые цены,</li>
+					<li>ответственность за все действия лежит на партнёре. При использовании консультантов компании &nbsp;АвтоДом<br>
+					&nbsp;для подбора запчастей, в том числе с использованием телефонных и он-лайн консультаций действуют розничные цены и правила продажи.</li>
+				</ol>
+
+				<p><strong>Компания&nbsp;</strong>АвтоДом &nbsp;&nbsp;<strong>обязуется:</strong></p>
+
+				<ol>
+					<li>Предоставлять информацию о наличном товаре партнёрам и клиентам партнёра с помощью интернет - ресурсов</li>
+					<li>Организовывать доставку товара до партнёра своими силами, а также с привлечением сторонних организаций,</li>
+					<li>&nbsp;транспортных компаний и других.</li>
+				</ol>
+
+				<p><strong>Ограничение ответственности:</strong></p>
+
+				<ol>
+					<li>Компания &nbsp;АвтоДом<br>
+					&nbsp;не несёт ответственности за сроки доставки транспортными компаниями ни перед партнёрами ни перед конечными клиентами.</li>
+					<li>Компания&nbsp;АвтоДом<br>
+					&nbsp;не осуществляет доставку Партнеру и/или в транспортную компанию лобовых и задних стекол,&nbsp;обшивок потолка и шумоизоляций капота.</li>
+					<li>
+					Продажа вышеуказанных деталей осуществляется только путем самовывоза с подразделений&nbsp;<br>АвтоДом, курьером, которого заказывает сам Партнер.&nbsp;<br>
+					Ответственность за состояние детали и условия транспортировки Партнер принимает на себя в момент передачи детали курьеру.</li>
+					<li>На товар, бывший в употреблении, гарантии не распространяются. Товар передаётся партнёру "как есть".</li>
+					<li>Товар может содержать неисправности, которые возможно определить с использованием специального инструмента или при установке на автомобиль. Партнёр своими силами и за свой счёт осуществляет установку и проверку товара.</li>
+				</ol>
+
+				<p>&nbsp;</p>
+
+				<p>&nbsp;&nbsp; <strong>Компания&nbsp;</strong>АвтоДом &nbsp;<strong>имеет право:</strong></p>
+
+				<ol>
+					<li>По своему усмотрению размещать или не размещать информацию о партнёре на странице.</li>
+					<li>Отказать в сотрудничестве партнёру, не выполняющему настоящие условия, полностью или частично.</li>
+					<li>Отказать в сотрудничестве партнёру, на которого есть жалобы клиентов о недобросовесном или непрофессиональном поведении.</li>
+					<li>Присваивать партнёру статус в зависимости от оборотов, качества работы с компанией и клиентами.</li>
+					<li>Уведомлять конечных клиентов о статусе партнёра, предоставлять различное количество услуг партнёрам с разными статусами.</li>
+				</ol>
+
+				<p>Настоящий документ действителен в последнй версии, размещённой по адресу http://avtodom-lp.ru</p>
+
+				<p>Все предыдущие версии документа утрачивают силу после опубликования нового текста.</p>
+				</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+		</tbody>
+	</table> -->	   		</div>
+	   		<div class="modal-footer">
+        		<button type="button" class="btn btn-primary" data-dismiss="modal">Закрыть</button>
+      		</div>
+	    </div>
+	  </div>
+	</div>
+	<div class="modal fade bs-example-modal-lg" id="myModal11" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+	  <div class="modal-dialog modal-lg" role="document">
+	    <div class="modal-content">
+	    	<div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Ремонт мототехники</h4>
+	      </div>
+	      <div class="modal-body">
+	   			<img class="img-responsive" src="./images/mot1.jpg" alt="">
+<img class="img-responsive" src="./images/mot2.jpg" alt="">
+<img class="img-responsive" src="./images/mot3.jpg" alt="">
+<img class="img-responsive" src="./images/mot4.jpg" alt="">
+<img class="img-responsive" src="./images/mot5.jpg" alt="">
+<img class="img-responsive" src="./images/mot6.jpg" alt="">
+<img class="img-responsive" src="./images/mot7.jpg" alt="">
+<img class="img-responsive" src="./images/mot8.jpg" alt="">
+<img class="img-responsive" src="./images/mot9.jpg" alt="">
+<img class="img-responsive" src="./images/mot10.jpg" alt="">	   		</div>
+	   		<div class="modal-footer">
+        		<button type="button" class="btn btn-primary" data-dismiss="modal">Закрыть</button>
+      		</div>
+	    </div>
+	  </div>
+	</div>
+	
+<!-- /modals -->
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="js/common.js"></script>
+	
+</body>
+</html>

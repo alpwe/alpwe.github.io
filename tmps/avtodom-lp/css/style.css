@@ -1,0 +1,298 @@
+/*
+#da6c0f - оранжевый
+#d52121 - красный
+#171916 - темносерый
+
+текста
+#ccc - светлый
+#333 - темный
+*/
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&subset=cyrillic');
+body{
+	font-family: 'Open Sans', sans-serif;
+  	font-weight: 500;
+}
+.phone{
+	font-weight: 700;
+	font-size: 2em;
+	color: #d52121;
+}
+
+
+/* options bootstrap ======================*/
+
+.h4, h4 {
+    font-size: 16px;
+}
+.btn-primary {
+	background-color: #da6c0f;
+	border: 2px solid #da6c0f;
+  color: #eee;
+ }
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus{
+	background-color: #eb7d20;
+  border: 2px solid #eb7d20;
+ 	color: #fff;
+}
+
+.modal-lg {
+    width: 1070px;
+    font-weight: 400;
+}
+.carousel-inner > .item > a > img, 
+.carousel-inner > .item > img, 
+.img-responsive, .thumbnail a > img, 
+.thumbnail > img {
+    margin-left: auto;
+    margin-right: auto;
+}
+.carousel-indicators {
+    bottom: -35px;
+}
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none;
+}
+.table-bordered {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+
+/* /options bootstrap ======================*/
+
+header{
+	font-weight: 300;
+	color: #ccc;
+	text-align: center;
+	background: url(../images/bg2-85.jpg) no-repeat;
+	background-attachment: fixed;
+	background-size: 100% auto;
+}
+section{
+	background: #171916;
+	padding: 3% 0;
+}
+
+.ah-logo{
+	font-size: 7em;
+	color: #da6c0f;;
+	border-bottom: 1px solid #da6c0f;;
+}
+
+.logo{
+	margin-top: 5%;
+}
+
+.top-h1{
+	margin-top: 15%;
+}
+
+.top-text{
+	color: #c04d3e;
+	font-size: 1.7em;
+}
+
+.phone-top{
+	color: #ccc;
+	margin-top: 10%;
+	/*margin-bottom: 5%;*/
+	font-weight: 700;
+	font-size: 3em;
+	transition: 1s;
+}
+.btn-top{
+	background: rgba(0,0,0, 0.7);
+	border: 2px solid #d52121;
+	color: #da6c0f;
+	font-weight: 700;
+	margin-bottom: 10%;
+}
+.btn-top:hover{
+	color: #fff;
+}
+.phone-top:hover{
+	color: #da6c0f;
+	transition: 0.1s;
+}
+#recall{
+	color: #333;
+}
+.recall-form{
+	max-width: 25em;
+}
+
+
+
+/*#service*/
+#service{
+	color: #ccc;
+}
+#service a{
+	color: #ccc;
+	text-decoration: none
+}
+#service a:hover,
+#service a:active,
+#service a:focus,{
+	color: #ccc;
+	text-decoration: none
+}
+
+.item-list{
+	font-weight: 300;
+	color: #ccc;
+	margin-top: 2%;
+	width: 15%;
+	vertical-align: top;
+}
+
+.item-list .icon{
+ 	border: 2px solid #d52121;
+	border-radius: 10%;
+	color: #da6c0f;
+	font-size: 3em;
+	padding: 5%;
+	transition: 1s;
+}
+.item-list:hover{
+	font-weight: 400;
+	color: #eee;
+	cursor: pointer;
+}
+.item-list:hover .icon{
+	background: #da6c0f;
+ 	border: 2px solid #da6c0f;
+  color: #171916;
+  transition: 0s;
+}
+
+.item-text{
+	font-size: 14px;
+	margin-top: 5%;
+}
+#service .container{
+	border-bottom: 1px solid #333;
+}
+
+/*advantage*/
+#advantage{
+	color: #ccc;
+	padding: 0 0 3% 0;
+}
+
+
+/*washing*/
+#washing{
+	background: url(../images/bg-wash1.png) no-repeat;
+	background-size: 100% auto;
+	background-position: 0% 80%;
+	color: #333;
+}
+#washing h2{
+	margin-bottom: 5%;
+}
+.wash-form{
+	max-width: 25em;
+	margin-bottom: 10%;
+}
+
+
+.wrap-washing{
+	padding: 2%;
+}
+.washing,
+.washing th{
+	text-align: center;
+}
+
+
+.washing > tbody > tr > td, 
+.washing > tbody > tr > th, 
+.washing > tfoot > tr > td, 
+.washing > tfoot > tr > th, 
+.washing > thead > tr > td, 
+.washing > thead > tr > th {
+    border: 1px solid #333;
+    font-weight: 700;
+}
+
+
+.for-wash{
+	color: #da6c0f;
+	font-size: 3em;
+	font-weight: 300;
+}
+
+/*#evacuation*/
+
+#evacuation{
+	background: url(../images/eva_bg.png) no-repeat;
+	background-size: 75% auto;
+	background-position: 0% 100%;
+}
+.price-evacuator{
+	text-align: right;
+	font-size: 2em;
+	font-weight: 700;
+}
+.evacuator-form{
+	max-width: 25em;
+	margin: 0 0 15em auto;
+}
+
+#map{
+	padding: 0;
+}
+#wait{
+	background: url(../images/2-2.png) no-repeat #171916;
+	background-size: auto 100%;
+	background-position: 100% 100%;
+	font-weight: 400;
+	font-size: 20px;
+	color: #ccc;
+}
+.contacts{
+	margin: 35% 0;
+	padding-bottom: 5%;
+}
+
+#wait .glyphicon{
+	color: #da6c0f;
+}
+
+/* footer */
+footer{
+	font-weight: 300;
+	background: #171916;
+	padding: 2% 0;
+	font-size: 14px;
+	color: #ccc;
+}
+footer .ah-logo{
+	font-size: 9em;
+}
+footer a{
+	color: #ccc;
+}
+footer a:hover,
+footer a:focus,
+footer a:active{
+	color: #fff;
+}
+.footer_contacts{
+	margin-top: 13px;
+}
+.social{
+	margin-bottom: 2%;
+}
+.cards img{
+	display: inline-block;
+	max-width: 25%;
+	border-radius: 3px;
+}

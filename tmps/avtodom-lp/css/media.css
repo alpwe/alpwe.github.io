@@ -1,0 +1,63 @@
+@media (max-width: 768px) {
+	header{
+		background-size: auto 100%;
+		background-position: 50%;
+	}
+	.modal-lg {
+    width: 95%;
+	}
+	.for-wash{
+    font-size: 1em;
+  }
+  #washing{
+		background-size: auto 100%;
+		background-position: 50%;
+	}
+  .wash-form{
+		max-width: 35em;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#wait{
+		font-weight: 300;
+		font-size: 16px;
+		background-position: 150% 100%;
+	}
+}
+
+@media (max-width: 360px) {
+	#wait{
+		background-image: none;
+	}
+	.modal-lg {
+    width: 95%;
+    font-weight: 300;
+	}
+
+	.phone-top {
+    font-size: 2em;
+  }
+  .btn-top {
+    font-weight: 500;
+  }
+	.item-list {
+    width: 30%;
+	}
+	#evacuation {
+    background-size: 100% auto;
+    background-position: 0% 100%;
+    text-align: center !important;
+	}
+	#evacuation .text-right{
+		text-align: center;
+	}
+		.price-evacuator {
+    font-size: 1em;
+    font-weight: 700;
+    text-align: center;
+	}	
+	.evacuator-form {
+    max-width: 25em;
+    margin: 0 0 10em auto;
+	}
+}
